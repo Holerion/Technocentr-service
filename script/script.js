@@ -1,5 +1,7 @@
-const btnOpenHeder = document.querySelector('#openHeder')
-const header = document.querySelector('nav')
-btnOpenHeder.addEventListener('click', ()=>{
-    header.classList.toggle('open')
-})
+const slider = document.querySelectorAll('input[name="css-fadeshow"]')
+// let j=0
+// setInterval(() => {
+//     j<2?j++:j=0;    
+//     slider[j].checked=true
+//     console.log(j);
+// }, 7000);

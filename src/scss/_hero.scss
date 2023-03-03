@@ -471,10 +471,32 @@
 }
  .gellary{
     position: relative;
-    height: 600px;
+    height: 800px;
+
+
+
+    .slide-title{
+        width: 80%;
+        margin: auto;
+        z-index: 100;
+        margin-top: 150px;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 1.5rem;
+            width: 50%;
+        }
+    }
  }
- .container {
-    
+ .container {    
      position: absolute;
      top: 0;
      bottom: 0;
@@ -482,4 +504,17 @@
      right: 0;
      box-shadow: 0 0 20px rgba(0,0,0,0.1);
      overflow: hidden;
+ }
+
+
+
+ .card-list{
+    
+    position: relative;
+    margin-top: 150px;
+    display: grid;
+    place-items: center;
+    grid-template-columns:repeat(4,1fr);
+    width: 100%;
+
  }
