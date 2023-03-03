@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  scroll-behavior: smooth
+}
+
+
+@import "./hero";
+@import "./header";
+@import "./variables";
+
+
+
+
+
+
+li{
+  list-style: none
+}
+body {
+  overflow-x: hidden;
+  background-color: $second-color;
+  height: 5000px;
+}
+

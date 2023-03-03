@@ -1,0 +1,145 @@
+$bg: #fff;
+$text: rgba(0, 0, 0, 0.7);
+$hover: darken($text, 10%);
+
+@import "./variables";
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+label {
+  cursor: pointer;
+}
+header {
+  position: relative;
+}
+nav {
+a{
+    padding: 5px 10px;
+}
+  background-color: $second-color;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 15px;
+
+  .list {
+    flex-wrap: wrap;
+    display: flex;
+
+    li {
+      width: 150px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  .tm-linkHover01 {
+    font-size: 1.2rem;
+    a,
+    span,
+    label {
+      user-select: none;
+      cursor: pointer;
+      position: relative;
+      color: inherit;
+      text-decoration: none;
+      line-height: 24px;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        transition: transform 0.5s ease;
+      }
+    }
+
+    .effect-1 {
+      padding-top: 10px;
+      &:before {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: $hover;
+        transform: scaleX(0);
+      }
+      &:hover:before {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  svg {
+    font-size: 0.8rem;
+    transform: rotatez(-90deg);
+    transition: 0.5s;
+  }
+
+  .sec-flor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: $second-color;
+opacity:1;
+    transition: 0.5s;
+    z-index: 1;
+
+    height: 0px;
+    li {
+      display: none;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  input[type="checkbox"]:checked + label,
+  input[type="radio"]:checked + label {
+    svg {
+      transform: rotatez(0deg);
+      transition: 0.5s;
+    }
+
+    & + .sec-flor {
+      opacity: 1;
+      height: 50px;
+      transition: 0.5s;
+      z-index: 1;
+
+      li {
+        display: block;
+      }
+    }
+  }
+
+  .thr-flor {
+    height: 0px;
+    opacity: 0;
+    background-color: $second-color;
+    width: 100%;
+z-index: -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    position: absolute;
+    transition: 0.5s;
+    left: 0;
+  }
+
+  input[type="radio"]:checked + label {
+    & + .thr-flor {
+      height: 50px;
+      opacity: 1;
+      z-index: 1;
+      background-color: $second-color;
+      transition: 0.5s;
+    }
+  }
+}
