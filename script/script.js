@@ -1,7 +1,74 @@
-const slider = document.querySelectorAll('input[name="css-fadeshow"]')
-// let j=0
-// setInterval(() => {
-//     j<2?j++:j=0;    
-//     slider[j].checked=true
-//     console.log(j);
-// }, 7000);
+const heder = document.querySelector('nav')
+let prevHeight = scrollY;
+
+
+const hederOut=(heder)=>{
+    heder.classList.remove("hadeIn")
+    heder.classList.add("hadeOut")
+  }
+  const hederIn=(heder)=>{
+    heder.classList.remove("hadeOut")
+  heder.classList.add("hadeIn")
+}
+
+const slideBG = (herBG) => {
+    herBG.style.backgroundPosition = scrollY / 25 + 10 + "%";
+  };
+
+
+  window.addEventListener("scroll", function () {
+    slideBG(document.querySelector(".hero"));
+
+if (prevHeight>scrollY) {
+    hederIn(heder)
+    
+    prevHeight=scrollY
+}else{
+    hederOut(heder)
+
+    prevHeight=scrollY
+}
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+const prepGallaryRadio = document.querySelectorAll('.preposition input')
+console.log('prepGallaryRadio: ', prepGallaryRadio);
+const prepGallaryItem = document.querySelectorAll('.preposition .item')
+console.log('prepGallaryItem: ', prepGallaryItem);
+
+prepGallaryItem.forEach(e=>{
+    const num =e.dataset.num
+    e.addEventListener('click',()=>{
+        console.log('da')
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

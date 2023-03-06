@@ -2,30 +2,34 @@ $bg: #fff;
 $text: rgba(0, 0, 0, 0.7);
 $hover: darken($text, 10%);
 
-@import "./variables";
+@import "../variables";
 
-input[type="checkbox"],
-input[type="radio"] {
-  display: none;
-}
+
 label {
   cursor: pointer;
 }
 header {
-  position: relative;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
 }
 nav {
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: none;
+  }
+
 a{
     padding: 5px 10px;
 }
-  background-color: $second-color;
+  background-color: $main-color;
 
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
 
-  padding: 15px;
+  padding: 0px;
 
   .list {
     flex-wrap: wrap;
@@ -47,7 +51,6 @@ a{
       user-select: none;
       cursor: pointer;
       position: relative;
-      color: inherit;
       text-decoration: none;
       line-height: 24px;
       &:before,
@@ -87,7 +90,7 @@ a{
     position: absolute;
     width: 100%;
     left: 0;
-    background-color: $second-color;
+    background-color: $main-color;
 opacity:1;
     transition: 0.5s;
     z-index: 1;
@@ -122,7 +125,7 @@ opacity:1;
   .thr-flor {
     height: 0px;
     opacity: 0;
-    background-color: $second-color;
+    background-color: $main-color;
     width: 100%;
 z-index: -1;
     display: grid;
@@ -138,8 +141,62 @@ z-index: -1;
       height: 50px;
       opacity: 1;
       z-index: 1;
-      background-color: $second-color;
+      background-color: $main-color;
       transition: 0.5s;
     }
+  }
+
+
+  .active{
+    color: $ackent-color;
+
+  }
+}
+
+
+
+
+
+
+
+.hadeIn {
+  animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.hadeOut {
+  animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
   }
 }

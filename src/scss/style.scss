@@ -6,15 +6,20 @@
 }
 
 
-@import "./hero";
-@import "./header";
+@import "./components/hero";
+@import "./components/header";
+@import "./components/cards";
 @import "./variables";
+@import "./test";
 
 
 
 a{
   text-decoration: none;
-  color: black;
+  color: $text-sec-color;
+}
+h1,h2,h3{
+  color: $text-main-color;  
 }
 
 li{
@@ -22,7 +27,53 @@ li{
 }
 body {
   overflow-x: hidden;
-  background-color: $second-color;
-  height: 5000px;
+  background-color: $main-color;
+  font-size: 34px;
+}
+section{
+  margin-bottom: 400px;
+    padding: 20px;
+    
+  text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutUs{
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+}
+
+.text-side{
+  width: 100%;
+
+  h2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+
+  }
+  h3{
+    font-size: 0.7em;
+  }
+  p{
+    font-size: 0.6em;
+  }
+
+}
