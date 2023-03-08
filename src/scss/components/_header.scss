@@ -9,6 +9,7 @@ label {
   cursor: pointer;
 }
 header {
+
   z-index: 100;
   position: fixed;
   width: 100%;
@@ -22,6 +23,8 @@ nav {
 a{
     padding: 5px 10px;
 }
+
+box-shadow:  0px 0px 33px #00000091;
   background-color: $main-color;
 
   position: relative;
@@ -90,6 +93,8 @@ a{
   }
 
   .sec-flor {
+    
+box-shadow:  0px 0px 10px #00000050;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
@@ -129,6 +134,8 @@ opacity:1;
   }
 
   .thr-flor {
+    
+box-shadow:  0px 0px 10px #00000054;
     height: 0px;
     opacity: 0;
     background-color: $main-color;

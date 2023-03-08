@@ -1,4 +1,6 @@
 const heder = document.querySelector('nav')
+const checkItemNav = document.querySelector('#checkItemNav')
+
 let prevHeight = scrollY;
 
 
@@ -20,54 +22,26 @@ const slideBG = (herBG) => {
     slideBG(document.querySelector(".hero"));
 
 if (prevHeight>scrollY) {
-    hederIn(heder)
-    
+    hederIn(heder)    
     prevHeight=scrollY
 }else{
     hederOut(heder)
-
     prevHeight=scrollY
 }
 
   });
 
 
+const retFalse = ()=>{
+  const radioItemsNav = document.querySelectorAll('input[name="thr-flor"]')
+  radioItemsNav.forEach(e=>{
+    e.checked=false
+  })
+}
 
-
-
-
-
-
-
-
-
-const prepGallaryRadio = document.querySelectorAll('.preposition input')
-console.log('prepGallaryRadio: ', prepGallaryRadio);
-const prepGallaryItem = document.querySelectorAll('.preposition .item')
-console.log('prepGallaryItem: ', prepGallaryItem);
-
-prepGallaryItem.forEach(e=>{
-    const num =e.dataset.num
-    e.addEventListener('click',()=>{
-        console.log('da')
-    })
+checkItemNav.addEventListener('click', ()=>{
+  retFalse()
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

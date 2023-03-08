@@ -9,6 +9,9 @@
 @import "./components/hero";
 @import "./components/header";
 @import "./components/cards";
+@import "./components/WhyWe";
+@import "./components/footer";
+@import "./components/ourWorcks";
 @import "./variables";
 @import "./test";
 
@@ -28,7 +31,7 @@ li{
 body {
   overflow-x: hidden;
   background-color: $main-color;
-  font-size: 34px;
+  font-size: 24px;
 }
 section{
   margin-bottom: 400px;
