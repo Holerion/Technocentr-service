@@ -17,7 +17,7 @@
 @import "./proto/contactsPage";
 
 @import "./variables";
-@import "./aboutUs";
+@import "./preposition";
 
 img {
   object-fit: cover;
@@ -30,6 +30,10 @@ h1,
 h2,
 h3 {
   color: $text-main-color;
+}
+h2{
+  font-size: 2em;
+  margin: 50px 0;
 }
 
 li {
@@ -49,7 +53,7 @@ body {
   }
 }
 section {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   padding: 20px;
 
   text-align: center;
