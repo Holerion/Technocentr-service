@@ -5,16 +5,21 @@ $hover: darken($text, 10%);
 @import "../variables";
 
 
+
 label {
   cursor: pointer;
 }
 header {
-
   z-index: 100;
   position: fixed;
   width: 100%;
 }
-nav {
+nav.expand {
+
+  @media screen and (max-width: 950px) {
+    display: none;    
+  }
+
   input[type="checkbox"],
   input[type="radio"] {
     display: none;
@@ -160,16 +165,8 @@ z-index: -1;
   }
 
 
-  .active{
-    color: $ackent-color;
 
-  }
 }
-
-
-
-
-
 
 
 .hadeIn {
@@ -213,3 +210,199 @@ z-index: -1;
     opacity: 0;
   }
 }
+
+
+
+nav.hamburger{  
+  height: 0px;
+  .menu{    
+  padding: 2% 10%;
+    background-color: $main-color;
+    transition: 1s;
+    
+    transform: translateY(-100vh);
+    &.show{
+      transform: translateY(0vh);
+    }
+  height: 100vh;
+  }
+  @media screen and (min-width: 950px) {
+    display: none;    
+  }
+
+  
+  ul{    
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: none;
+  }
+  label{
+    margin:0 10%;
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+    border-bottom: 2px solid black;
+    height: 50px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+  }
+
+
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+$dark: #212121;
+$light: #efefef;
+$color: #b3e5fc;
+
+@mixin btn($left, $top) {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: $top;
+  right: 0;
+  transition-duration: 0.5s;
+}
+
+@mixin icon($height, $width) {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  top: 30px;
+  background-color: $dark;
+}
+
+@mixin icon-before($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $dark;
+  content: "";
+  top: $top;
+}
+
+@mixin icon-after($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $dark;
+  content: "";
+  top: $top;
+}
+
+@mixin icon-circle($height, $width) {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  top: 2px;
+  border-radius: 100%;
+  background: transparent;
+  border: 4px solid black;
+  left: -15px;
+}
+
+
+
+.btn1{
+  filter: drop-shadow(2px 2px 20px $main-color);
+
+  scale: 0.5;
+  @include btn(0%, 10px);
+  
+  .icon-left {
+    @include icon(8px, 30px);
+    left: 0px; 
+    
+    &:before{
+      @include icon-before(8px, 30px, -20px);
+    }
+    
+    &:after{
+      @include icon-after(8px, 30px, 20px);
+    }
+    
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  
+  .icon-right {
+    @include icon(8px, 30px);
+    left: 30px;
+    
+    &:before{
+      @include icon-before(8px, 30px, -20px);
+    }
+    
+    &:after{
+      @include icon-after(8px, 30px, 20px);
+    }
+  }
+  
+  &.open {
+    .icon-left {
+      transition-duration: 0.5s;
+      background: transparent;
+      
+      &:before{
+        transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+      }
+
+      &:after{
+        transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+      }
+    }
+    
+    .icon-right {
+      transition-duration: 0.5s;
+      background: transparent;  
+      
+      &:before{
+        transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+      }
+
+      &:after{
+        transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+
+
+.active{
+  &>label{
+    color: $ackent-color;
+  }
+  &>a{
+    color: $ackent-color;
+  }
+} 
+  

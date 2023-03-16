@@ -1,10 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
-  scroll-behavior: smooth
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
 
 @import "./components/hero";
 @import "./components/header";
@@ -12,71 +11,80 @@
 @import "./components/WhyWe";
 @import "./components/footer";
 @import "./components/ourWorcks";
+@import "./components/gallary";
+
+@import "./proto/textPage";
+@import "./proto/contactsPage";
+
 @import "./variables";
-@import "./test";
+@import "./aboutUs";
 
-
-
-a{
+img {
+  object-fit: cover;
+}
+a {
   text-decoration: none;
   color: $text-sec-color;
 }
-h1,h2,h3{
-  color: $text-main-color;  
+h1,
+h2,
+h3 {
+  color: $text-main-color;
 }
 
-li{
-  list-style: none
+li {
+  list-style: none;
 }
 body {
   overflow-x: hidden;
   background-color: $main-color;
-  font-size: 24px;
+  font-size: 20px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.04) 15%, rgba(255,255,255,0) 0%);
+
+  font-family: $base-font-family;
+  color: $nero;
+
+  @media screen and (max-width: 700px) {
+    font-size: 18px;
+  }
 }
-section{
-  margin-bottom: 400px;
-    padding: 20px;
-    
+section {
+  margin-bottom: 150px;
+  padding: 20px;
+
   text-align: center;
+
+  @media screen and (max-width: 700px) {
+    padding: 0px;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.aboutUs{
+.aboutUs {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
 }
 
-.text-side{
+.text-side {
   width: 100%;
 
-  h2{
+  h2 {
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 1.5em;
-
   }
-  h3{
+  h3 {
     font-size: 0.7em;
   }
-  p{
+  p {
     font-size: 0.6em;
   }
+}
 
+.img-div {
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 100px;
 }

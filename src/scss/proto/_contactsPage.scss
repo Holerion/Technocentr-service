@@ -1,0 +1,54 @@
+.contac-cantainer{
+    padding-top: 150px;
+    margin-bottom: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    li{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    svg{
+        margin-bottom: 20px;
+        height: 40px;
+        background-color: $sec-akcent-color;
+        color: white;
+        padding: 15px;
+        border-radius: 50%;
+        position: relative;
+    }
+    .pictogram::after{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        mix-blend-mode:darken;        
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        height:70px ;
+        width: 70px;
+        background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    
+    }
+    .pictogram{        
+        position: relative;
+    }
+
+    span{
+        height: 50px;
+        
+    }
+    p{
+        text-align: center;
+        height: 100px;
+    }
+
+
+}

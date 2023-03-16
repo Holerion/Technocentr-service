@@ -9,99 +9,40 @@
     <link rel="stylesheet" href="./src/css/style.min.css" />
     <script src="https://kit.fontawesome.com/03abd041c3.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body style="background:none" onload="setActive(0)">
     <header>
-      <nav>
-        <a href="../index.html"><img src="../src/img/logo_technocentr.svg" width="300px" alt="" /></a>
-        <ul class="list tm-linkHover01">
-          <li><a href="./index.html" class="effect-1 active">Головна</a></li>
-          <li><a href="./aboutUs.html" class="effect-1">Про нас</a></li>
-          <li><a href="./news.html" class="effect-1">Новини </a></li>
-          <li><a href="./contacts.html" class="effect-1">Контакти</a></li>
-          <li>
-            <input type="checkbox" name="sec-flor" id="sec-flor" />
-            <label class="effect-1" for="sec-flor" id="checkItemNav">Послуги <i class="fa-solid fa-chevron-down"></i></label>
-
-            <ul class="sec-flor">
-              <li>
-                <input type="radio" name="thr-flor" id="1" />
-                <label class="effect-1" for="1">Відновлення спецтехніки <i class="fa-solid fa-chevron-down"></i></label>
-                <ul class="thr-flor">
-                  <li>
-                    <a class="effect-1" href="./restoration-of-special-equipment/Repair-of-large-sized-special-equipment.html"
-                      >Ремонт великогабаритної спецтехніки</a
-                    >
-                  </li>
-                  <li>
-                    <a class="effect-1" href="./restoration-of-special-equipment/Restoration-of-hydraulic-systems.html"
-                      >Відновлення гідравлічних систем</a
-                    >
-                  </li>
-                  <li>
-                    <a class="effect-1" href="./restoration-of-special-equipment/Restoration-of-technological-equipment.html"
-                      >Відновлення технологічного обладнання</a
-                    >
-                  </li>
-                  <li>
-                    <a class="effect-1" href="./restoration-of-special-equipment/Agriculture.html">Сільське господарство</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <input type="radio" name="thr-flor" id="2" />
-                <label class="effect-1" for="2">Розробка та виготовлення <i class="fa-solid fa-chevron-down"></i></label>
-                <ul class="thr-flor">
-                  <li>
-                    <a class="effect-1" href="./development-and-preparation/Attachments-for-special-equipment.html"
-                      >Навісне обладнання для спецтехніки</a
-                    >
-                  </li>
-                  <li>
-                    <a class="effect-1" href="./development-and-preparation/Manufacturing-of-technological-equipment.html"
-                      >Виготовлення технологічного обладнання</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="effect-1"
-                      href="./development-and-preparation/Production-of-metal-structures-according-to-customers-drawings.html"
-                      >Виготовлення металоконструкцій згідно з кресленнями замовника</a
-                    >
-                  </li>
-                  <li>
-                    <a class="effect-1" href="./development-and-preparation/Equipment-for-agricultural-machinery.html"
-                      >Обладнання для сільгосптехніки</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <input type="radio" name="thr-flor" id="3" />
-                <label class="effect-1" for="3">Інші <i class="fa-solid fa-chevron-down"></i></label>
-                <ul class="thr-flor">
-                  <li>
-                    <a class="effect-1" href="./other/Surfacing-and-boring-operations.html">Наплавочно-розточувальні роботи</a>
-                  </li>
-                  <li><a class="effect-1" href="./other/Development-of-machine parts.html">Розробка деталей машин</a></li>
-                  <li><a class="effect-1" href="./other/Lining.html">Футерування</a></li>
-                  <li><a class="effect-1" href="./other/Sheet-metal-bending.html">Гнуття листового металу</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
+      <nav class="expand">        
+      </nav>
+      <nav class="hamburger">
       </nav>
     </header>
 
     <main>
-      <section class="hero" style="height: 800px"></section>
+      <section class="hero" style="height: 900px">
+        <div class="gallary">
+          <div class="slide">
+            <img src="./src/img/work/hero-slide/1.webp" class="bloc" />
+            <img src="./src/img/work/hero-slide/2.webp" class="bloc" />
+            <img src="./src/img/work/hero-slide/3.webp" class="bloc" />
+            <img src="./src/img/work/hero-slide/4.webp" class="bloc" />
+            <img src="./src/img/work/hero-slide/5.webp" class="bloc" />
+            <img src="./src/img/work/hero-slide/6.webp" class="bloc" />
+            <img src="./src/img/work/hero-slide/7.webp" class="bloc" />
+            <img src="./src/img/work/hero-slide/8.webp" class="bloc" />
+            <img src="./src/img/work/hero-slide/9.webp" class="bloc" />
+            <img src="./src/img/work/hero-slide/10.webp" class="bloc" />
+          </div>
 
-      <section class="aboutUs" style="height: 800px">
-        <img src="" style="width: 50%; height: 800px; position: absolute; left: 0" alt="" />
+          <ul class="control">
+            <li id="prevslide"><i class="fa-solid fa-chevron-left"></i></li>
+            <li id="nextslide"><i class="fa-solid fa-chevron-right"></i></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="aboutUs" style="min-height: 800px">
         <div class="text-side">
-          <h2>Компанія Техноцентр Сервіс</h2>
+          <h2 style="margin-bottom:150px; ">Компанія Техноцентр Сервіс</h2>
 
           <div class="info">
             <ul class="cards">
@@ -112,7 +53,7 @@
                     Виконуємо роботи з відновлення зношених або пошкоджених деталей, вузлів машин та механізмів з наступних сфер
                     їх застосування:
                   </p>
-                  <a href="#rest" class="btn">Детальніше</a>
+                  <a href="#scene1" class="btn">Детальніше</a>
                 </div>
               </li>
               <li class="card" style="--i: 1">
@@ -121,14 +62,14 @@
                   <p class="copy">
                     Надаємо повний комплекс послуг з розробки та подальшого виготовлення деталей, вузлів машин та механізмів
                   </p>
-                  <a href="#dev" class="btn">Детальніше</a>
+                  <a href="#scene2" class="btn">Детальніше</a>
                 </div>
               </li>
               <li class="card" style="--i: 1">
                 <div class="content">
-                  <h3 class="title">ІНШЕ</h3>
+                  <h3 class="title">Послуги</h3>
                   <p class="copy">Надаємо послуги з виконання вузькоспрямованих та спеціалізованих видів робіт</p>
-                  <a href="#other" class="btn">Детальніше</a>
+                  <a href="#scene3" class="btn">Детальніше</a>
                 </div>
               </li>
             </ul>
@@ -136,7 +77,7 @@
         </div>
       </section>
 
-      <section class="whyWe">
+      <!-- <section class="whyWe">
         <h2>чому ми</h2>
 
         <ul>
@@ -171,12 +112,12 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, provident.</p>
           </li>
         </ul>
-      </section>
+      </section> -->
 
       <section class="preposition" style="margin-bottom: 0px">
         <h2>ПОСЛУГИ</h2>
-
-        <div id="scene">
+        <div id="scene1"></div>
+        <div class="scene">
           <div id="left-zone">
             <ul class="list">
               <li class="item">
@@ -184,16 +125,15 @@
                 <label class="label_strawberry" for="Repair">Ремонт великогабаритної спецтехніки</label>
                 <div class="content">
                   <img src="" alt="" />
-                  <div>
-                    <h2>Ремонт великогабаритної спецтехніки</h2>
+                  <div class="text">
+                    <h3>Ремонт великогабаритної спецтехніки</h3>
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui cumque minus commodi sapiente dolor dolorem
-                      labore earum modi voluptatem quod, facere, dicta, suscipit est. Quibusdam recusandae voluptatem nihil
-                      accusantium consequatur in repellat impedit molestiae hic officiis. Accusamus provident dolor sapiente sit,
-                      eum alias accusantium magnam, temporibus totam quisquam aspernatur nobis.
+                      Парки вантажопідйомної, будівельної та дорожньої спеціальної техніки на деяких підприємствах складаються з
+                      десятків машин. Періодично спеціалізовані машини, що піддаються експлуатаційним навантаженням, виходять з
+                      ладу, через що ремонт спецтехніки в Україні є затребуваною послугою.
                     </p>
                     <div class="container">
-                      <a href="./restoration-of-special-equipment/Repair-of-large-sized-special-equipment.html" class="button">
+                      <a href="/restoration-of-special-equipment/Repair-of-large-sized-special-equipment.html" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">Детальніше</span>
@@ -207,23 +147,23 @@
                 <label class="label_banana" for="Restoration">Відновлення гідравлічних систем</label>
 
                 <div class="content">
-                  <div>
-                    <h2>Відновлення гідравлічних систем</h2>
+                  <img src="" alt="" />
+                  <div class="text">
+                    <h3>Відновлення гідравлічних систем</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem exercitationem labore, nostrum soluta
-                      illo debitis qui est voluptatem dolor at nemo aperiam officia recusandae velit voluptas earum dicta
-                      architecto fugit non pariatur eius dolore ab. Laboriosam perspiciatis aperiam neque illo optio harum ducimus
-                      minus, mollitia sequi. Sint, nisi eligendi.
+                      Оскільки гідравліка – це основа робочого вузла дорожньо-будівельної та землерийної техніки, неполадки з нею
+                      призводять до часткової або повної втрати працездатності цих машин. Радимо періодично проводити огляди
+                      спецтехніки в спеціально призначених для цього сервісних центрах, щоб звести до мінімуму ймовірність
+                      поломки.
                     </p>
                     <div class="container">
-                      <a href="./restoration-of-special-equipment/Restoration-of-hydraulic-systems.html" class="button">
+                      <a href="/restoration-of-special-equipment/Restoration-of-hydraulic-systems.html" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">Детальніше</span>
                       </a>
                     </div>
                   </div>
-                  <img src="" alt="" />
                 </div>
               </li>
               <li class="item">
@@ -231,16 +171,15 @@
                 <label class="label_apple" for="Technical">Технологічне обладнання</label>
                 <div class="content">
                   <img src="" alt="" />
-                  <div>
-                    <h2>Технологічне обладнання</h2>
+                  <div class="text">
+                    <h3>Технологічне обладнання</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem exercitationem labore, nostrum soluta
-                      illo debitis qui est voluptatem dolor at nemo aperiam officia recusandae velit voluptas earum dicta
-                      architecto fugit non pariatur eius dolore ab. Laboriosam perspiciatis aperiam neque illo optio harum ducimus
-                      minus, mollitia sequi. Sint, nisi eligendi.
+                      Внаслідок сильних динамічних навантажень та впливу абразивних матеріалів комплектуючі елементи
+                      технологічного обладнання швидко зношуються. Щоб не допустити зупинки виробничого процесу та забезпечити
+                      безпеку співробітників, потрібно своєчасно ремонтувати технологічне обладнання.
                     </p>
                     <div class="container">
-                      <a href="./restoration-of-special-equipment/Restoration-of-technological-equipment.html" class="button">
+                      <a href="/restoration-of-special-equipment/Restoration-of-technological-equipment.html" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">Детальніше</span>
@@ -253,23 +192,23 @@
                 <input type="radio" id="Agriculture" name="basic_carousel" />
                 <label class="label_orange" for="Agriculture">Сільське господарство</label>
                 <div class="content">
-                  <div>
-                    <h2>Сільське господарство</h2>
+                  <img src="" alt="" />
+                  <div class="text">
+                    <h3>Сільське господарство</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic laboriosam illo, nobis reprehenderit facere
-                      tenetur id accusantium ipsum quisquam, harum deleniti doloremque omnis et commodi, atque blanditiis autem
-                      aliquid porro perspiciatis aliquam recusandae itaque ipsa. Odit doloremque tempore dolor iusto a, delectus
-                      fuga, quia voluptates molestiae reprehenderit cum, minima quisquam!
+                      Сільськогосподарські роботи проводяться в несприятливих для техніки умовах. Опади у вигляді дощу та снігу,
+                      пил та бруд стають причиною прискореного механічного зносу деталей та вузлів. Вибоїни на польових дорогах та
+                      нерівності поля викликають інтенсивні динамічні навантаження на конструктивні з’єднання, внаслідок чого
+                      кріплення послаблюються.
                     </p>
                     <div class="container">
-                      <a href="./restoration-of-special-equipment/Agriculture.html" class="button">
+                      <a href="/restoration-of-special-equipment/Agriculture.html" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">Детальніше</span>
                       </a>
                     </div>
                   </div>
-                  <img src="" alt="" />
                 </div>
               </li>
             </ul>
@@ -277,25 +216,24 @@
           <div id="middle-border"></div>
           <div id="right-zone"></div>
         </div>
-
-        <div id="scene">
+        <div id="scene2"></div>
+        <div class="scene">
           <div id="left-zone">
             <ul class="list">
               <li class="item">
                 <input type="radio" id="Repair2" name="basic_carousel2" checked="checked" />
-                <label class="label_strawberry" for="Repair2">Ремонт великогабаритної спецтехніки</label>
+                <label class="label_strawberry" for="Repair2">Навісне обладнання</label>
                 <div class="content">
                   <img src="" alt="" />
-                  <div>
-                    <h2>Ремонт великогабаритної спецтехніки</h2>
+                  <div class="text">
+                    <h3>Навісне обладнання</h3>
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui cumque minus commodi sapiente dolor dolorem
-                      labore earum modi voluptatem quod, facere, dicta, suscipit est. Quibusdam recusandae voluptatem nihil
-                      accusantium consequatur in repellat impedit molestiae hic officiis. Accusamus provident dolor sapiente sit,
-                      eum alias accusantium magnam, temporibus totam quisquam aspernatur nobis.
+                      Функціональні можливості спецтехніки безпосередньо залежать від навісного обладнання. Всього одна машина
+                      може виконувати самі різноманітні операції на будівництві, в комунальному або аграрному секторі, при
+                      автодорожніх, навантажувальних, ремонтних, земляних роботах.
                     </p>
                     <div class="container">
-                      <a href="./restoration-of-special-equipment/Repair-of-large-sized-special-equipment.html" class="button">
+                      <a href="/restoration-of-special-equipment/Repair-of-large-sized-special-equipment.html" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">Детальніше</span>
@@ -306,43 +244,43 @@
               </li>
               <li class="item">
                 <input type="radio" id="Restoration2" name="basic_carousel2" />
-                <label class="label_banana" for="Restoration2">Відновлення гідравлічних систем</label>
+                <label class="label_banana" for="Restoration2">Технологічне обладнання</label>
 
                 <div class="content">
-                  <div>
-                    <h2>Відновлення гідравлічних систем</h2>
+                  <img src="" alt="" />
+                  <div class="text">
+                    <h3>Технологічне обладнання</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem exercitationem labore, nostrum soluta
-                      illo debitis qui est voluptatem dolor at nemo aperiam officia recusandae velit voluptas earum dicta
-                      architecto fugit non pariatur eius dolore ab. Laboriosam perspiciatis aperiam neque illo optio harum ducimus
-                      minus, mollitia sequi. Sint, nisi eligendi.
+                      Запорука виконання робіт у низці галузей – надійне технологічне устаткування. Для гірничодобувної
+                      промисловості та металургії – це апарати подрібнення твердих речовин та міцних матеріалів (дробарки).
+                      Обладнання призначене для подрібнення до необхідної фракції кам’яного вугілля, шлаку, вапняку, деяких руд,
+                      інших матеріалів.
                     </p>
                     <div class="container">
-                      <a href="./restoration-of-special-equipment/Restoration-of-hydraulic-systems.html" class="button">
+                      <a href="/restoration-of-special-equipment/Restoration-of-hydraulic-systems.html" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">Детальніше</span>
                       </a>
                     </div>
                   </div>
-                  <img src="" alt="" />
                 </div>
               </li>
               <li class="item">
                 <input type="radio" id="Technical2" name="basic_carousel2" />
-                <label class="label_apple" for="Technical2">Технологічне обладнання</label>
+                <label class="label_apple" for="Technical2">Виготовлення конструкцій з металу за кресленнями</label>
                 <div class="content">
                   <img src="" alt="" />
-                  <div>
-                    <h2>Технологічне обладнання</h2>
+                  <div class="text">
+                    <h3>Виготовлення конструкцій з металу за кресленнями</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem exercitationem labore, nostrum soluta
-                      illo debitis qui est voluptatem dolor at nemo aperiam officia recusandae velit voluptas earum dicta
-                      architecto fugit non pariatur eius dolore ab. Laboriosam perspiciatis aperiam neque illo optio harum ducimus
-                      minus, mollitia sequi. Sint, nisi eligendi.
+                      Конструкції з металу широко використовуються у будівництві та при виготовленні промислового обладнання.
+                      Більшість потреб у металоконструкціях покриває масове виробництво. Поряд з цим іноді виникає потреба в
+                      нестандартному виробі. Тому спеціалізовані підрядники пропонують послуги з виготовлення таких виробів за
+                      індивідуальними кресленнями.
                     </p>
                     <div class="container">
-                      <a href="./restoration-of-special-equipment/Restoration-of-technological-equipment.html" class="button">
+                      <a href="/restoration-of-special-equipment/Restoration-of-technological-equipment.html" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">Детальніше</span>
@@ -355,23 +293,23 @@
                 <input type="radio" id="Agriculture2" name="basic_carousel2" />
                 <label class="label_orange" for="Agriculture2">Сільське господарство</label>
                 <div class="content">
-                  <div>
-                    <h2>Сільське господарство</h2>
+                  <img src="" alt="" />
+                  <div class="text">
+                    <h3>Сільське господарство</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic laboriosam illo, nobis reprehenderit facere
-                      tenetur id accusantium ipsum quisquam, harum deleniti doloremque omnis et commodi, atque blanditiis autem
-                      aliquid porro perspiciatis aliquam recusandae itaque ipsa. Odit doloremque tempore dolor iusto a, delectus
-                      fuga, quia voluptates molestiae reprehenderit cum, minima quisquam!
+                      Заміна комплектуючих елементів устаткування сільськогосподарської техніки часом викликає складнощі.
+                      Необхідні деталі іноді доводиться довго шукати чи купувати за кордоном. Компанія “Техноцентр Сервіс”
+                      пропонує альтернативний варіант – розробку та виготовлення запчастин та вузлів на замовлення. У нас ви
+                      можете отримати точну копію конструктивного елемента на заміну або замовити його за кресленням.
                     </p>
                     <div class="container">
-                      <a href="./restoration-of-special-equipment/Agriculture.html" class="button">
+                      <a href="/restoration-of-special-equipment/Agriculture.html" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">Детальніше</span>
                       </a>
                     </div>
                   </div>
-                  <img src="" alt="" />
                 </div>
               </li>
             </ul>
@@ -379,25 +317,25 @@
           <div id="middle-border"></div>
           <div id="right-zone"></div>
         </div>
-
-        <div id="scene">
+        <div id="scene3"></div>
+        <div class="scene">
           <div id="left-zone">
             <ul class="list">
               <li class="item">
                 <input type="radio" id="Repair3" name="basic_carousel3" checked="checked" />
-                <label class="label_strawberry" for="Repair3">Ремонт великогабаритної спецтехніки</label>
+                <label class="label_strawberry" for="Repair3">Наплавочно-розточувальні роботи</label>
                 <div class="content">
                   <img src="" alt="" />
-                  <div>
-                    <h2>Ремонт великогабаритної спецтехніки</h2>
+                  <div class="text">
+                    <h3>Наплавочно-розточувальні роботи</h3>
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui cumque minus commodi sapiente dolor dolorem
-                      labore earum modi voluptatem quod, facere, dicta, suscipit est. Quibusdam recusandae voluptatem nihil
-                      accusantium consequatur in repellat impedit molestiae hic officiis. Accusamus provident dolor sapiente sit,
-                      eum alias accusantium magnam, temporibus totam quisquam aspernatur nobis.
+                      Несправності великогабаритної спецтехніки, зниження продуктивності під час виконання робіт часто є наслідком
+                      зносу рухомих сполучень. Майстри компанії “Техноцентр Сервіс” для відновлення функціональності стріл, ковшів
+                      та інших конструктивних елементів спеціалізованої техніки пропонують скористатися методом
+                      наплавлення/розточування.
                     </p>
                     <div class="container">
-                      <a href="./restoration-of-special-equipment/Repair-of-large-sized-special-equipment.html" class="button">
+                      <a href="/restoration-of-special-equipment/Repair-of-large-sized-special-equipment.html" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">Детальніше</span>
@@ -408,43 +346,43 @@
               </li>
               <li class="item">
                 <input type="radio" id="Restoration3" name="basic_carousel3" />
-                <label class="label_banana" for="Restoration3">Відновлення гідравлічних систем</label>
+                <label class="label_banana" for="Restoration3">Розробка деталей машин</label>
 
                 <div class="content">
-                  <div>
-                    <h2>Відновлення гідравлічних систем</h2>
+                  <img src="" alt="" />
+                  <div class="text">
+                    <h3>Розробка деталей машин</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem exercitationem labore, nostrum soluta
-                      illo debitis qui est voluptatem dolor at nemo aperiam officia recusandae velit voluptas earum dicta
-                      architecto fugit non pariatur eius dolore ab. Laboriosam perspiciatis aperiam neque illo optio harum ducimus
-                      minus, mollitia sequi. Sint, nisi eligendi.
+                      Кожен бульдозер, верстат, технологічний комплекс зібраний із тисяч деталей складної конфігурації, в процесі
+                      експлуатації яких може знадобитися заміна кожної з них. Однак жоден керівник не спроможний забезпечити
+                      ремонтний підрозділ повним спектром запчастин. Питання постачання потрібної запчастини ускладнюється, якщо
+                      обладнання або машина створені за кордоном або їх випуск припинено. У цих випадках доводиться або місяцями
+                      чекати потрібної деталі, або замовляти виготовлення запчастини на верстатному устаткуванні.
                     </p>
                     <div class="container">
-                      <a href="./restoration-of-special-equipment/Restoration-of-hydraulic-systems.html" class="button">
+                      <a href="/restoration-of-special-equipment/Restoration-of-hydraulic-systems.html" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">Детальніше</span>
                       </a>
                     </div>
                   </div>
-                  <img src="" alt="" />
                 </div>
               </li>
               <li class="item">
                 <input type="radio" id="Technical3" name="basic_carousel3" />
-                <label class="label_apple" for="Technical3">Технологічне обладнання</label>
+                <label class="label_apple" for="Technical3">Футерування</label>
                 <div class="content">
                   <img src="" alt="" />
-                  <div>
-                    <h2>Технологічне обладнання</h2>
+                  <div class="text">
+                    <h3>Футерування</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem exercitationem labore, nostrum soluta
-                      illo debitis qui est voluptatem dolor at nemo aperiam officia recusandae velit voluptas earum dicta
-                      architecto fugit non pariatur eius dolore ab. Laboriosam perspiciatis aperiam neque illo optio harum ducimus
-                      minus, mollitia sequi. Sint, nisi eligendi.
+                      Спецтехніка найчастіше експлуатується з високою інтенсивністю, ковші екскаваторів та навантажувачів, кузови
+                      самоскидів постійно піддаються ударам та абразивним впливам. Знос та деформація відбуваються неминуче, хоча
+                      виробники закладають досить великий ресурс стійкості до таких впливів.
                     </p>
                     <div class="container">
-                      <a href="./restoration-of-special-equipment/Restoration-of-technological-equipment.html" class="button">
+                      <a href="/restoration-of-special-equipment/Restoration-of-technological-equipment.html" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">Детальніше</span>
@@ -455,25 +393,24 @@
               </li>
               <li class="item">
                 <input type="radio" id="Agriculture3" name="basic_carousel3" />
-                <label class="label_orange" for="Agriculture3">Сільське господарство</label>
+                <label class="label_orange" for="Agriculture3">Гнуття листовго металу</label>
                 <div class="content">
-                  <div>
-                    <h2>Сільське господарство</h2>
+                  <img src="" alt="" />
+                  <div class="text">
+                    <h3>Гнуття листовго металу</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic laboriosam illo, nobis reprehenderit facere
-                      tenetur id accusantium ipsum quisquam, harum deleniti doloremque omnis et commodi, atque blanditiis autem
-                      aliquid porro perspiciatis aliquam recusandae itaque ipsa. Odit doloremque tempore dolor iusto a, delectus
-                      fuga, quia voluptates molestiae reprehenderit cum, minima quisquam!
+                      Пропонуємо послуги гнуття великоформатних та товстих листових деталей. Зусилля в 16000 кН, на робочій
+                      довжині 6 метрів, надасть Вам переваги у виробничому процесі, а саме – уникнути зварювання деталей. Ви
+                      отримуєте готову деталь без втрати стійкості матеріалу.
                     </p>
                     <div class="container">
-                      <a href="./restoration-of-special-equipment/Agriculture.html" class="button">
+                      <a href="/restoration-of-special-equipment/Agriculture.html" class="button">
                         <div class="button__line"></div>
                         <div class="button__line"></div>
                         <span class="button__text">Детальніше</span>
                       </a>
                     </div>
                   </div>
-                  <img src="" alt="" />
                 </div>
               </li>
             </ul>
@@ -484,70 +421,112 @@
       </section>
 
       <section class="ourWorcks">
-        <h1>Наші роботи </h1>
+        <h2 style="margin-bottom: 50px">Наші роботи</h2>
         <div class="grid">
-          <div class="item">
-            <div class="item__details">jelly-o brownie sweet</div>
-          </div>
-          <div class="item item--large">
-            <div class="item__details">Muffin jelly gingerbread</div>
-          </div>
-          <div class="item item--medium">
-            <div class="item__details">sesame snaps chocolate</div>
-          </div>
-          <div class="item item--large">
-            <div class="item__details">Oat cake</div>
-          </div>
-          <div class="item item--full">
-            <div class="item__details">jujubes cheesecake</div>
-          </div>
-          <div class="item item--medium">
-            <div class="item__details">Dragée pudding brownie</div>
-          </div>
-          <div class="item item--large">
-            <div class="item__details">Oat cake</div>
-          </div>
-          <div class="item">
-            <div class="item__details">powder toffee</div>
-          </div>
-          <div class="item item--medium">
-            <div class="item__details">pudding cheesecake</div>
-          </div>
-          <div class="item item--large">
-            <div class="item__details">toffee bear claw</div>
-          </div>
-          <div class="item">
-            <div class="item__details">cake cookie croissant</div>
-          </div>
-          <div class="item item--medium">
-            <div class="item__details">liquorice sweet roll</div>
-          </div>
-          <div class="item item--medium">
-            <div class="item__details">chocolate marzipan</div>
-          </div>
-          <div class="item item--large">
-            <div class="item__details">danish dessert lollipop</div>
-          </div>
-          <div class="item">
-            <div class="item__details">sugar plum dragée</div>
-          </div>
+          <div class="item item--large"></div>
+          <div class="item"></div>
+          <div class="item item--large"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+
+          <div class="item item--large"></div>
+          <div class="item"></div>
+          <div class="item item--large"></div>
+          <div class="item item--large"></div>
+          <div class="item"></div>
+          <div class="item item--large"></div>
+          <div class="item item--large"></div>
+          <div class="item"></div>
+          <div class="item item--large"></div>
+          <div class="item"></div>
+
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item item--large"></div>
+          <div class="item item--large"></div>
+          <div class="item"></div>
+          <div class="item item--large"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item item--large"></div>
+
+          <div class="item"></div>
+          <div class="item item--large"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item item--large"></div>
+          <div class="item"></div>
+          <div class="item item--large"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item item--large"></div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <address>
-        <ul>
-          <li>
-            03067, Київ, Солом’янський район, вул. <br />
-            Полковника Шутова 16, офіс 215,
-          </li>
-          <li><a href="">1tehnocentr@gmail.com</a></li>
-        </ul>
-      </address>
+    <footer id="footer">
+      <div class="logo">
+        <a href="/index.html"><img src="./src/img/iso-9001-2015.png" alt="" class="img-fluid logo-footer" /></a>
+      </div>
 
-      <img src="./src/img/iso-9001-2015.png" alt="" />
+      <div class="useful-link">
+        <h2>Посилання</h2>
+        <img src="/assets/images/about/home_line.png" alt="" class="img-fluid" />
+        <ul class="use-links">
+          <li>
+            <a href="/index.html"><i class="fa-solid fa-angles-right"></i> Головна</a>
+          </li>
+          <li>
+            <a href="/aboutUs.html"><i class="fa-solid fa-angles-right"></i> Про нас</a>
+          </li>
+          <li>
+            <a href="/contacts.html"><i class="fa-solid fa-angles-right"></i> Контакти</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="social-links">
+        <h2>Соцмережі</h2>
+        <img src="./assets/images/about/home_line.png" alt="" />
+        <ul class="social-icons">
+          <li>
+            <a href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="address">
+        <h2>Адреса</h2>
+        <img src="./assets/images/about/home_line.png" alt="" class="img-fluid" />
+        <ul class="address-links">
+          <li class="address1">
+            <i class="fa-solid fa-location-dot"></i> 03067, Київ, Солом’янський район, <br />
+            вул. Полковника Шутова 16, офіс 215,
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-phone"></i>067 555-49-00</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-envelope"></i>1tehnocentr@gmail.com</a>
+          </li>
+        </ul>
+      </div>
     </footer>
+    <section id="copy-right" style="margin: 0; padding: 0">
+      <div class="copy-right-sec">
+        <i class="fa-solid fa-copyright"></i> 2023 Powerd By <a href="https://www.linkedin.com/in/alexander-red">Alex Redko</a>
+      </div>
+    </section>
+
     <script src="./script/script.js"></script>
   </body>
 </html>
