@@ -1,5 +1,5 @@
 const navbarExpand = document.querySelector(".expand").innerHTML = `
-<a href="/index.html"><img src="../src/img/logo_technocentr.svg" width="300px" alt="" /></a>
+<a href="/index.html"><img src="/src/img/logo_technocentr.svg" width="300px" alt="" /></a>
         <ul class="list tm-linkHover01">
           <li><a href="/index.html" class="effect-1 ">Головна</a></li>
           <li>
@@ -231,8 +231,6 @@ hamburgerLinkList[index3].classList.add('active')
   
 }
 
-console.log('linkList[index]: ', expandLinkList);
-console.log('linkList[index]: ', hamburgerLinkList);
 }
 
 
