@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+@import "./components/hero";
+@import "./components/header";
+@import "./components/btn";
+
+
+@import "./variables";
+
+
+
+img {
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+  color: $text-sec-color;
+}
+h1,
+h2,
+h3 {  
+  font-family: serif;
+  color: $text-main-color;
+}
+li,ol{
+  list-style: none;
+}
+
+
+body {
+  overflow-x: hidden;
+  font-size: 20px;
+
+
+  height: 1000vh;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+html{
+  
+  background-color: tomato;
+}
+

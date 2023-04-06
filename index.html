@@ -6,21 +6,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Комплекс послуг по розробці та виготовленню деталей, вузлів машин та механизмів | Техноцентр Сервіс</title>
     <link rel="icon" type="image/x-icon" href="./src/img/cropped-favicon-180x180.png" />
-    <link rel="stylesheet" href="./style/css/style.min.css" />
+    <link rel="stylesheet" href="./src/css/style.min.css" />
     <script src="https://kit.fontawesome.com/03abd041c3.js" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="./src/css/animate.css" />
   </head>
-  <body>
-    <header>
+  <body style="background: none" onload="setActive(0)">
+    <header class="navbar">
+      <nav class="normal-navbar">
+          <img src="./src/img/logo_technocentr.svg" height="100%" alt="">
+
+
+          <div class="link-list">
+            <ul class="fast-contact">
+              <li>+38 067 733 91 95</li>
+              <li>cfifredko@gmail.com</li>
+            </ul>
+
+            <div>              
+              <ul class="pages">
+                <li  class="link">Про нас</li>
+                <li class="expand-menu link">
+                  <span>Послуги</span>
+                    <ul class="seond-list">
+                      <li class="item">                        
+                        <span>Відновлення</span>
+                        <ul class="thrd-list">
+                          <li class="item">Ремонт великогабаритної спецтехніки</li>
+                          <li class="item">Відновлення гідравлічних систем</li>
+                          <li class="item">Технологічне обладнання</li>
+                          <li class="item">Сільське господарство</li>
+                        </ul>
+                      </li>
+                      <li class="item">                        
+                        <span>РОЗРОБКА ТА ВИГОТОВЛЕННЯ</span>
+                        <ul class="thrd-list">
+                          <li class="item">Навісне обладнання</li>
+                          <li class="item">Технологічне обладнання</li>
+                          <li class="item">Виготовлення конструкцій з металу за кресленнями</li>
+                          <li class="item">Сільське господарство</li>
+                        </ul>
+                      </li>
+                      <li class="item">                        
+                        <span>ПОСЛУГИ</span>
+                        <ul class="thrd-list">
+                          <li class="item">Наплавочно-розточувальні роботи</li>
+                          <li class="item">Розробка деталей машин</li>
+                          <li class="item">Футерування</li>
+                          <li class="item">Послуга гнуття листового металу</li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                </li>
+                <li class="link">Наші роботи</li>
+                <li class="btn-primary">Контакти</li>
+              </ul>
+
+              <ul class="laguage">
+                <li>UK</li>
+                <li>RU</li>
+                <li>EN</li>
+              </ul>
+            </div>
+          </div>
+
+      </nav>
 
     </header>
 
+    <main>
+      <section class="hero" role="main" style="padding: 0">
+        <section class="velo-slides" data-velo-slider="on" data-velo-theme="light">
+          <section class="velo-slide">
+            <span class="velo-slider__hint"><span><span>tehnocentr</span></span></span>
+            <div class="velo-slide__bg">
+              <figure class="velo-slide__figure" style="background-image: url(./src/img/work/hero-slide/1.webp)"></figure>
+            </div>
 
-    <footer>
+            <header class="velo-slide__header">
+              <h3 class="velo-slide__title">
+                <span class="oh"><span>Компанія</span></span
+                ><span class="oh"><span>Техноцентр Сервіс</span></span>
+              </h3>
+              <p class="velo-slide__text">
+                <span class="oh"><span>Виконуємо роботи з відновлення зношених або пошкоджених деталей, вузлів машин та механізмів з наступних сфер їх застосування.</span></span>
+              </p>
+              <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#scene1"><span class="btn-draw__text"><span>детальніше</span></span></a></span>
+            </header>
+          </section>
 
-    </footer>
+   
+          <section class="velo-slide">
+            <span class="velo-slider__hint"><span><span>Відновлення спецтехніки</span></span></span>
+            <div class="velo-slide__bg">
+              <figure class="velo-slide__figure" style="background-image: url(./src/img/work/hero-slide/10.webp)"></figure>
+            </div>
+
+            <header class="velo-slide__header">
+              <h3 class="velo-slide__title">
+                <span class="oh"><span>Відновлення </span></span><span class="oh"><span>спецтехніки</span></span>
+              </h3>
+              <p class="velo-slide__text">
+                <span class="oh"><span>Виконуємо роботи з відновлення зношених або пошкоджених деталей, вузлів машин та механізмів з наступних сфер їх застосування</span></span>
+              </p>
+              <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#scene1"><span class="btn-draw__text"><span>детальніше</span></span></a></span>
+            </header>
+          </section>
+
+          <section class="velo-slide">
+            <span class="velo-slider__hint"><span><span>Розробка та виготовленню</span></span></span>
+            <div class="velo-slide__bg">
+              <figure class="velo-slide__figure" style="background-image: url()"></figure>
+              <div class="velo-slide__vid-wrap">
+                <video autoplay="" class="velo-slide__vid" loop="" poster="">
+                  <source src="./src/img/work/video-slide-1.mp4" type="video/mp4" />
+                  Wait, are you still using IE? Bruv. Go get Chrome, or kick rocks.
+                </video>
+              </div>
+            </div>
+            <header class="velo-slide__header">
+              <h3 class="velo-slide__title">
+                <span class="oh"><span>Розробка </span></span><span class="oh"><span>та виготовленню</span></span>
+              </h3>
+              <p class="velo-slide__text">
+                <span class="oh"><span>Надаємо повний комплект послуг з розробки та подальшого виготовлення деталей, вузлів машин та механізмів</span></span>
+              </p>
+              <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#scene2"><span class="btn-draw__text"><span>детальніше</span></span></a></span>
+            </header>
+          </section>
+
+          <section class="velo-slide">
+            <span class="velo-slider__hint"><span><span>Послуги</span></span></span>
+            <div class="velo-slide__bg">
+              <figure class="velo-slide__figure" style="background-image: url(./src/img/work/hero-slide/4.webp)"></figure>
+            </div>
+            <header class="velo-slide__header">
+              <h3 class="velo-slide__title">
+                <span class="oh"><span>Послуги</span></span>
+              </h3>
+              <p class="velo-slide__text">
+                <span class="oh"><span>Надаємо послуги з виконання вузькоспрямовних та спеціалізованих видів робіт</span></span>
+              </p>
+              <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#scene3"><span class="btn-draw__text"><span>детальніше</span></span></a></span>
+            </header>
+          </section>
+
+          <nav class="velo-slides-nav">
+            <ul class="velo-slides-nav__list">
+              <li>
+                <a class="js-velo-slides-prev velo-slides-nav__prev inactive" href="#0"><i class="icon-up-arrow"></i></a>
+              </li>
+              <li>
+                <a class="js-velo-slides-next velo-slides-nav__next" href="#0"><i class="icon-down-arrow"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </section>
 
 
-    <script src="./script/script.js"></script>
+    </main>
+
+    <footer></footer>
   </body>
+
+  <script src="./script/wow.min.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass: "wow", // default
+      animateClass: "animated", // default
+      offset: 250, // default
+      mobile: true, // default
+      live: true, // default
+    });
+    wow.init();
+  </script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./script/script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.0/velocity.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.0/velocity.ui.js"></script>
+  <script src="./script/gallary.js"></script>
+
+  <script></script>
 </html>
