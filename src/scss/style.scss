@@ -9,6 +9,7 @@
 @import "./components/hero";
 @import "./components/header";
 @import "./components/btn";
+@import "./components/footer";
 
 
 @import "./variables";
@@ -20,13 +21,13 @@ img {
 }
 a {
   text-decoration: none;
-  color: $text-sec-color;
+  color: $sec-color;
 }
 h1,
 h2,
 h3 {  
   font-family: serif;
-  color: $text-main-color;
+  color: $sec-color;
 }
 li,ol{
   list-style: none;
@@ -37,16 +38,13 @@ body {
   overflow-x: hidden;
   font-size: 20px;
 
-
-  height: 1000vh;
-
-  @media screen and (max-width: 1200px) {
-    font-size: 16px;
+  @media screen and (max-width: 1400px) {
+    font-size: 14px;
   }
 }
 
 html{
   
-  background-color: tomato;
 }
+
 

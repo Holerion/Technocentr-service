@@ -478,7 +478,7 @@ body {
 
 
 .velo-slides[data-velo-theme="light"]{
-  background: $sec-akcent-color;
+  background: $sec-color;
   border-bottom: 1em solid #fff;
 
   .velo-slide{
@@ -672,7 +672,7 @@ $border-hovering: 0vw;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  color: $second-color;
+  color: $sec-color;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;

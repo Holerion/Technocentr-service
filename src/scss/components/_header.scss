@@ -1,23 +1,36 @@
 @import "../mixin";
-.navbar {
-  position: absolute;
-  z-index: 100;
-  max-height: 140px;
-  width: 100%;
-  padding: 15px 100px;
-  background-color: white;
+@import "../components/hero";
 
-  li{
-    color: $second-color;
-    
-    font-family:Arial, Helvetica, sans-serif;
+.navbar {
+  li {
+    color: $sec-color;
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .hamburger-navbar{
+    display: none;
   }
 
   .normal-navbar {
-    height: 110px;
-    @include dFlex(center, space-between);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding: 15px 100px;
+    background-color: white;
+    height: 140px;
 
+    transition: 0.5s;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    .logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
     .link-list {
+      justify-self: end;
       height: 100%;
       display: grid;
       grid-template-rows: 1fr 1fr;
@@ -26,7 +39,9 @@
       & > div {
         @include dFlex(center, space-between);
       }
-      .fast-contact,.laguage,.pages {
+      .fast-contact,
+      .laguage,
+      .pages {
         height: 100%;
         @include dFlex(center, end);
         margin-right: 15px;
@@ -35,7 +50,8 @@
 
       .fast-contact li {
         margin-right: 15px;
-        color: rgba($second-color,0.5);
+
+        opacity: 0.5;
       }
       .laguage li {
         margin-right: 15px;
@@ -44,48 +60,107 @@
         margin-right: 30px;
       }
 
-      .link{
+      .link {
         height: 100%;
         @include dFlex();
 
-        &:hover{
-            color: $ackent-color;
+        &:hover {
+          color: $fir-color;
         }
-        
       }
-      li{
+      li {
+        color: inherit;
+
         cursor: pointer;
         transition: 0.5s color ease-out;
       }
+    }
+  }
 
+  .second-list {
+    position: absolute;
+    height: 0;
+    top: -140px;
+    left: 0;
+    width: 100%;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+
+  .second-list.show {
+    top: 140px;
+    overflow: visible;
+    box-sizing: content-box !important;
+    transition: 0.4s;
+    height: calc(50vh - 140px);
+
+    background-color: $sec-color;
+
+    * {
+      color: inherit;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(50vh - 100px);
+      left: 0;
+      height: 50vh;
+      width: 100%;
+      background-color: rgba(255, 0, 0, 0.37);
+    }
+  }
+
+
+
+
+.second-list {
+  padding:20px 100px ;
+
+  border-top: 2px solid rgba(255, 255, 255, 0.281);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr;
+  gap: 20px;
+
+  .sec-item {
+    overflow: hidden;
+    border-right: 1px solid rgba(252, 252, 252, 0.11);
+    padding-right: 5px;
+  }
+
+  span {
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .thrd-list {
+    .item {
+      &:first-child {
+        margin-top: 25px;
+      }
+      margin-top: 15px;
+
+      font-size: 0.8em;
     }
   }
 }
+}
+
+
 
 .navbar.show {
-  top: 0;
-  position: fixed;
-  z-index: 100;
-  max-height: 70px;
-  width: 100%;
-  padding: 15px 100px;
-  background-color: white;
-
   .normal-navbar {
-    height: 40px;
-    @include dFlex(center, space-between);
+    top: 0;
+    height: 70px;
+
+    padding: 5px 100px;
 
     .link-list {
-      height: 100%;
+      display: flex;
+      align-items: center;
 
-      & > div {
-        @include dFlex(center, space-between);
-      }
-      .fast-contact,.laguage,.pages  {
-        height: 100%;
-        @include dFlex(center, end);
-        margin-right: 15px;
-
+      .pages {
         border-right: none;
       }
 
@@ -93,71 +168,232 @@
       .laguage {
         display: none;
       }
-      .pages li {
-        margin-right: 30px;
-      }
+    }
+  }
+  .second-list {
+    top: -70px;
+  }
+
+  .second-list.show {
+    top: 70px;
+    height: calc(50vh - 70px);
+
+    &::after {
+      top: calc(50vh - 30px);
     }
   }
 }
 
 
-
-
-.expand-menu{
-    position: relative;
-    &:hover{
-        .seond-list{               
-            transform:scaleX(1) ;
-            transition: 0.5s;
-        }
-    }
-}
-
-
-.thrd-list{
-    position: absolute;
-    transform: translateX(0px) scaleX(0) scaleY(0);
+.navbar.haburger{
+  .normal-navbar{
+    display: none;
+  }
+  .hamburger-navbar{
+    display: block;
+  }
+  
+  .menu{
+    position: fixed;
+    top: 80px;
+    padding: 15px 20px;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    transform: translateX(-100vw);
     transition: 0.5s;
-    top: 0;
 
-    .item{
-        color: black;
-        &:hover{
-            color: $ackent-color;
+
+
+    .link-list{
+      position: relative;
+      height: calc(100% - 120px);
+
+      .pages{
+        li{
+          width: 100%;
+          font-size: 1.2em;
+          margin-top: 35px;
+          border-bottom: 1px solid black;
         }
+        .link{
+          cursor: pointer;
+        }
+        .link:hover{
+          color: red;
+        }
+        
+        .btn-primary{
+          margin-top: 35px !important;
+          width: max-content;
+          margin: auto;
+        }
+      }
+
+      .bottom-links{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        @include dFlex(space-around,space-around);
+        .fast-contact{
+          @include dFlex(space-around,space-around);
+          width: 80%;
+        }
+        .laguage{
+          width: 20%;
+          @include dFlex(space-around,space-around);
+        }
+      }
+      
     }
 
-}
+  }
 
-.seond-list{
-    position: absolute;
-    top: 40px;
-    z-index: -1;
-    opacity: 1;
-    left: -100%;
-    
-    width: max-content;
-    color: black;
-    
-    transform:scaleX(0) ;
-    transition: .5s;
+  .second-list-hamburger{
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: white;
+   width: 100%;
+   height: 100%;
+   padding: 15px 20px;
+   transition: 0.5s;
+   transform: translateX(-100vw);
+
+   .sec-item{
+    margin-top: 20px;
+    span{
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    }
     .item{
-        position: relative;
-        width: 100%;
-        background-color: white;
-        padding: 10px 15px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+      margin-top: 10px;
+    }
+   }
+
+
+  }
+
+
+
+
+
+
+  
+  :root {
+    --bar-bg: #212529;
+  }
+  .nav-fixed{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    height: 80px;
+    background-color: white;
+
+    .logo{
+      margin: auto;
+      object-fit: contain !important;
+    }
+  }
+  .menu-icon {
+    &::before{
+      z-index: 0;
+      content: '';
+      position: absolute;
+      
+      height: 100%;
+      width: 100%;
+      opacity: 1;
+      background: $thr-color;
+      border-radius: 50%;
+    }
+    position: relative;
+    top: 10px;
+    left: 10px;
     
-        &:hover{
-            color: $ackent-color;
-
-            .thrd-list{
-                transform: translateX(-100%);
-                transition: 0.5s;
-            }
+    scale: 1;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  
+    .menu-icon__cheeckbox {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      z-index: 2;
+      -webkit-touch-callout: none;
+      position: absolute;
+      opacity: 0;
+    }
+    div {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 22px;
+      height: 12px;
+      scale: 1.2;
+    }
+    span {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: var(--bar-bg, #ffffff);
+      border-radius: 1px;
+      transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+  
+      &:first-of-type {
+        top: 0;
+      }
+      &:last-of-type {
+        bottom: 0;
+      }
+    }
+    &.active,
+    .menu-icon__cheeckbox:checked + div {
+      span {
+        &:first-of-type {
+          transform: rotate(45deg);
+          top: 5px;
         }
-    }   
-
+        &:last-of-type {
+          transform: rotate(-45deg);
+          bottom: 5px;
+        }
+      }
+    }
+  
+    &.active:hover span:first-of-type,
+    &.active:hover span:last-of-type,
+    &:hover .menu-icon__cheeckbox:checked + div span:first-of-type,
+    &:hover .menu-icon__cheeckbox:checked + div span:last-of-type {
+      width: 22px;
+    }
+  
+    &:hover {
+      // no need hover effect on mobile.
+      @media (min-width: 1024px) {
+        span:first-of-type {
+          width: 26px;
+        }
+  
+        span:last-of-type {
+          width: 12px;
+        }
+      }
+    }
+  }
+  
+  
 }
-
-

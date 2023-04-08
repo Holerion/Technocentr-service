@@ -12,64 +12,150 @@
   </head>
   <body style="background: none" onload="setActive(0)">
     <header class="navbar">
+      
       <nav class="normal-navbar">
-          <img src="./src/img/logo_technocentr.svg" height="100%" alt="">
+        <img src="./src/img/logo_technocentr.svg" class="logo"  alt="" />
+
+        <div class="link-list">
+          <ul class="fast-contact">
+            <li>+38 067 733 91 95</li>
+            <li>cfifredko@gmail.com</li>
+          </ul>
+
+          <div>
+            <ul class="pages">
+              <li class="link">Про нас</li>
+              <li class="expand-menu link">
+                <span class="expand-btn" onclick="showTest()">Послуги</span>
+              </li>
+              <li class="link">Наші роботи</li>
+              <li class="btn-primary">Контакти</li>
+            </ul>
+
+            <ul class="laguage">
+              <li>UK</li>
+              <li>RU</li>
+            </ul>
+          </div>
+        </div>
 
 
+        <ul class="second-list">
+          <li class="sec-item">
+            <span>Відновлення</span>
+            <ul class="thrd-list">
+              <li class="item">Ремонт великогабаритної спецтехніки</li>
+              <li class="item">Відновлення гідравлічних систем</li>
+              <li class="item">Технологічне обладнання</li>
+              <li class="item">Сільське господарство</li>
+            </ul>
+          </li>
+  
+          <li class="sec-item">
+            <span>РОЗРОБКА ТА ВИГОТОВЛЕННЯ</span>
+            <ul class="thrd-list">
+              <li class="item">Навісне обладнання</li>
+              <li class="item">Технологічне обладнання</li>
+              <li class="item">Виготовлення конструкцій з металу за кресленнями</li>
+              <li class="item">Сільське господарство</li>
+            </ul>
+          </li>
+  
+          <li class="sec-item">
+            <span>ПОСЛУГИ</span>
+            <ul class="thrd-list">
+              <li class="item">Наплавочно-розточувальні роботи</li>
+              <li class="item">Розробка деталей машин</li>
+              <li class="item">Футерування</li>
+              <li class="item">Послуга гнуття листового металу</li>
+            </ul>
+          </li>
+          <li>
+            <img src="" width="100%" height="100%" alt="">
+          </li>
+        </ul>
+      </nav>
+
+
+      <nav class="hamburger-navbar">
+        <div class="menu">
+    
           <div class="link-list">
+          <ul class="pages">
+            <li class="link">Про нас</li>
+            <li class="expand-menu link">
+              <span class="expand-btn" onclick="showTestHamburger()">Послуги</span>
+            </li>
+            <li class="link">Наші роботи</li>
+            <li class="btn-primary">Контакти</li>
+          </ul>
+
+          <div class="bottom-links">
+            
+            <ul class="laguage">
+              <li>UK</li>
+              <li>RU</li>
+            </ul>
+            
             <ul class="fast-contact">
               <li>+38 067 733 91 95</li>
               <li>cfifredko@gmail.com</li>
             </ul>
-
-            <div>              
-              <ul class="pages">
-                <li  class="link">Про нас</li>
-                <li class="expand-menu link">
-                  <span>Послуги</span>
-                    <ul class="seond-list">
-                      <li class="item">                        
-                        <span>Відновлення</span>
-                        <ul class="thrd-list">
-                          <li class="item">Ремонт великогабаритної спецтехніки</li>
-                          <li class="item">Відновлення гідравлічних систем</li>
-                          <li class="item">Технологічне обладнання</li>
-                          <li class="item">Сільське господарство</li>
-                        </ul>
-                      </li>
-                      <li class="item">                        
-                        <span>РОЗРОБКА ТА ВИГОТОВЛЕННЯ</span>
-                        <ul class="thrd-list">
-                          <li class="item">Навісне обладнання</li>
-                          <li class="item">Технологічне обладнання</li>
-                          <li class="item">Виготовлення конструкцій з металу за кресленнями</li>
-                          <li class="item">Сільське господарство</li>
-                        </ul>
-                      </li>
-                      <li class="item">                        
-                        <span>ПОСЛУГИ</span>
-                        <ul class="thrd-list">
-                          <li class="item">Наплавочно-розточувальні роботи</li>
-                          <li class="item">Розробка деталей машин</li>
-                          <li class="item">Футерування</li>
-                          <li class="item">Послуга гнуття листового металу</li>
-                        </ul>
-                      </li>
-                    </ul>
-
-                </li>
-                <li class="link">Наші роботи</li>
-                <li class="btn-primary">Контакти</li>
-              </ul>
-
-              <ul class="laguage">
-                <li>UK</li>
-                <li>RU</li>
-                <li>EN</li>
-              </ul>
-            </div>
           </div>
+        </div>
 
+
+        <ul class="second-list-hamburger">
+          <li class="sec-item">
+            <span>Відновлення</span>
+            <ul class="thrd-list">
+              <li class="item">Ремонт великогабаритної спецтехніки</li>
+              <li class="item">Відновлення гідравлічних систем</li>
+              <li class="item">Технологічне обладнання</li>
+              <li class="item">Сільське господарство</li>
+            </ul>
+          </li>
+  
+          <li class="sec-item">
+            <span>РОЗРОБКА ТА ВИГОТОВЛЕННЯ</span>
+            <ul class="thrd-list">
+              <li class="item">Навісне обладнання</li>
+              <li class="item">Технологічне обладнання</li>
+              <li class="item">Виготовлення конструкцій з металу за кресленнями</li>
+              <li class="item">Сільське господарство</li>
+            </ul>
+          </li>
+  
+          <li class="sec-item">
+            <span>ПОСЛУГИ</span>
+            <ul class="thrd-list">
+              <li class="item">Наплавочно-розточувальні роботи</li>
+              <li class="item">Розробка деталей машин</li>
+              <li class="item">Футерування</li>
+              <li class="item">Послуга гнуття листового металу</li>
+            </ul>
+          </li>
+          <li>
+            <img src="" width="100%" height="100%" alt="">
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-fixed">
+        
+        
+        <div class="menu-icon">
+          <input class="menu-icon__cheeckbox" type="checkbox" />
+          <div>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <img src="./src/img/logo_technocentr.svg" class="logo" width="70%" height="70px"  alt="" />
+      </div>
+
+       </div>
+          
       </nav>
 
     </header>
@@ -78,7 +164,9 @@
       <section class="hero" role="main" style="padding: 0">
         <section class="velo-slides" data-velo-slider="on" data-velo-theme="light">
           <section class="velo-slide">
-            <span class="velo-slider__hint"><span><span>tehnocentr</span></span></span>
+            <span class="velo-slider__hint"
+              ><span><span>tehnocentr</span></span></span
+            >
             <div class="velo-slide__bg">
               <figure class="velo-slide__figure" style="background-image: url(./src/img/work/hero-slide/1.webp)"></figure>
             </div>
@@ -89,15 +177,25 @@
                 ><span class="oh"><span>Техноцентр Сервіс</span></span>
               </h3>
               <p class="velo-slide__text">
-                <span class="oh"><span>Виконуємо роботи з відновлення зношених або пошкоджених деталей, вузлів машин та механізмів з наступних сфер їх застосування.</span></span>
+                <span class="oh"
+                  ><span
+                    >Виконуємо роботи з відновлення зношених або пошкоджених деталей, вузлів машин та механізмів з наступних сфер
+                    їх застосування.</span
+                  ></span
+                >
               </p>
-              <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#scene1"><span class="btn-draw__text"><span>детальніше</span></span></a></span>
+              <span class="velo-slide__btn"
+                ><a class="btn-draw btn--white" href="#scene1"
+                  ><span class="btn-draw__text"><span>детальніше</span></span></a
+                ></span
+              >
             </header>
           </section>
 
-   
           <section class="velo-slide">
-            <span class="velo-slider__hint"><span><span>Відновлення спецтехніки</span></span></span>
+            <span class="velo-slider__hint"
+              ><span><span>Відновлення спецтехніки</span></span></span
+            >
             <div class="velo-slide__bg">
               <figure class="velo-slide__figure" style="background-image: url(./src/img/work/hero-slide/10.webp)"></figure>
             </div>
@@ -107,14 +205,25 @@
                 <span class="oh"><span>Відновлення </span></span><span class="oh"><span>спецтехніки</span></span>
               </h3>
               <p class="velo-slide__text">
-                <span class="oh"><span>Виконуємо роботи з відновлення зношених або пошкоджених деталей, вузлів машин та механізмів з наступних сфер їх застосування</span></span>
+                <span class="oh"
+                  ><span
+                    >Виконуємо роботи з відновлення зношених або пошкоджених деталей, вузлів машин та механізмів з наступних сфер
+                    їх застосування</span
+                  ></span
+                >
               </p>
-              <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#scene1"><span class="btn-draw__text"><span>детальніше</span></span></a></span>
+              <span class="velo-slide__btn"
+                ><a class="btn-draw btn--white" href="#scene1"
+                  ><span class="btn-draw__text"><span>детальніше</span></span></a
+                ></span
+              >
             </header>
           </section>
 
           <section class="velo-slide">
-            <span class="velo-slider__hint"><span><span>Розробка та виготовленню</span></span></span>
+            <span class="velo-slider__hint"
+              ><span><span>Розробка та виготовленню</span></span></span
+            >
             <div class="velo-slide__bg">
               <figure class="velo-slide__figure" style="background-image: url()"></figure>
               <div class="velo-slide__vid-wrap">
@@ -129,14 +238,25 @@
                 <span class="oh"><span>Розробка </span></span><span class="oh"><span>та виготовленню</span></span>
               </h3>
               <p class="velo-slide__text">
-                <span class="oh"><span>Надаємо повний комплект послуг з розробки та подальшого виготовлення деталей, вузлів машин та механізмів</span></span>
+                <span class="oh"
+                  ><span
+                    >Надаємо повний комплект послуг з розробки та подальшого виготовлення деталей, вузлів машин та
+                    механізмів</span
+                  ></span
+                >
               </p>
-              <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#scene2"><span class="btn-draw__text"><span>детальніше</span></span></a></span>
+              <span class="velo-slide__btn"
+                ><a class="btn-draw btn--white" href="#scene2"
+                  ><span class="btn-draw__text"><span>детальніше</span></span></a
+                ></span
+              >
             </header>
           </section>
 
           <section class="velo-slide">
-            <span class="velo-slider__hint"><span><span>Послуги</span></span></span>
+            <span class="velo-slider__hint"
+              ><span><span>Послуги</span></span></span
+            >
             <div class="velo-slide__bg">
               <figure class="velo-slide__figure" style="background-image: url(./src/img/work/hero-slide/4.webp)"></figure>
             </div>
@@ -147,7 +267,11 @@
               <p class="velo-slide__text">
                 <span class="oh"><span>Надаємо послуги з виконання вузькоспрямовних та спеціалізованих видів робіт</span></span>
               </p>
-              <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#scene3"><span class="btn-draw__text"><span>детальніше</span></span></a></span>
+              <span class="velo-slide__btn"
+                ><a class="btn-draw btn--white" href="#scene3"
+                  ><span class="btn-draw__text"><span>детальніше</span></span></a
+                ></span
+              >
             </header>
           </section>
 
@@ -163,11 +287,65 @@
           </nav>
         </section>
       </section>
-
-
     </main>
 
-    <footer></footer>
+    <footer>
+      <ul class="links">
+      <li class="link-list">
+        <ul>
+          <li class="link"><span>Головна</span></li>
+          <li class="link">Про нас</li>
+          <li class="link">Контакти</li>
+          <li class="link">Наші роботи</li>
+        </ul>
+      </li>
+      
+      <li class="link-list">
+        <ul>
+          <li class="link"><span>Відновлення</span></li>
+          <li class="link">Ремонт великогабаритної спецтехніки</li>
+          <li class="link">Відновлення гідравлічних систем</li>
+          <li class="link">Технологічне обладнання</li>
+          <li class="link">Сільське господарство</li>
+        </ul>
+      </li>
+
+      <li class="link-list">
+        <ul>
+          <li class="link"><span>РОЗРОБКА ТА ВИГОТОВЛЕННЯ</span></li>
+          <li class="link">Навісне обладнання</li>
+          <li class="link">Технологічне обладнання</li>
+          <li class="link">Виготовлення конструкцій з металу за кресленнями</li>
+          <li class="link">Сільське господарство</li>
+        </ul>
+      </li>
+
+      <li class="link-list">
+        <ul>
+          <li class="link"><span>ПОСЛУГИ</span></li>
+          <li class="link">Наплавочно-розточувальні роботи</li>
+          <li class="link">Розробка деталей машин</li>
+          <li class="link">Футерування</li>
+          <li class="link">Послуга гнуття листового металу</li>
+        </ul>
+      </li>
+
+      
+      
+      <li>
+        <img src="./src/img/iso-9001-2015.png" alt="">
+      </li>
+    
+      
+      </ul>
+
+      <ul class="bottom">
+        <li>Copyrights © 2023 Dekpol S.A. All rights reserved </li>
+        <li>UI/UX Design & developed by Alex Red</li>
+      </ul>
+
+
+    </footer>
   </body>
 
   <script src="./script/wow.min.js"></script>
@@ -195,3 +373,5 @@
 
   <script></script>
 </html>
+
+

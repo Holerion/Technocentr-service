@@ -45,3 +45,56 @@ window.addEventListener('scroll', ()=>{
 
   }
 })
+
+window.addEventListener('resize',()=>{
+  if($(window).width()<900){
+    normalNavbar.addClass('haburger')
+
+  }
+  else{
+    normalNavbar.removeClass('haburger')
+  }
+
+
+})
+
+
+
+function showTest(){
+  const sec_list =  $('.second-list')
+  sec_list.toggleClass('show')
+  
+  if(sec_list.hasClass('show')){
+    $('.normal-navbar').css({'background-color':'#82074a','color':'white'})
+  }
+  else
+  $('.normal-navbar').css({'background-color':'#fff', 'color':'black'})
+}
+
+let translate =-100;
+
+$('.menu-icon__cheeckbox').click(
+  function(){
+
+    if(translate==-100){
+      translate=0
+      this.checked=true
+    }else if(translate==0){
+      translate-=100
+      this.checked=false
+    }else{
+      translate-=100
+      this.checked=true
+    }
+
+    console.log('translate: ', translate);
+
+    $('.hamburger-navbar .menu').css('transform',`translateX(${translate}vw)`)
+  }
+  )
+  
+  function showTestHamburger(){
+    translate+=100;
+    console.log('translate: ', translate);
+    $('.hamburger-navbar .menu').css('transform',`translateX(${translate}vw)`)
+  }

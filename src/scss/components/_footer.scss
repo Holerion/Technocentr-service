@@ -1,0 +1,33 @@
+@import '../variables';
+
+footer{
+    height: 500px;
+    background-color: $fif-color;
+padding:5% 20% ;
+    .links{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+
+        gap: 25px;
+        .link{
+            span{
+                display: inline-block;
+                font-size: 1.3em;
+                font-weight: 700;
+                min-height: 50px;
+            }
+            margin-top: 10px;
+            font-size: 0.8em;
+        }
+    }
+
+    .bottom{
+        border-top: 1px solid rgba(255, 255, 255, 0.308);
+        display: flex;
+        padding-top: 15px;
+        margin-top: 15px;
+        font-size: 0.6em;
+        justify-content: space-between;
+    }
+
+}
