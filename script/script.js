@@ -54,9 +54,19 @@ window.addEventListener('resize',()=>{
   else{
     normalNavbar.removeClass('haburger')
   }
-
-
 })
+
+$(document).ready(()=>{
+
+  if($(window).width()<900){
+    normalNavbar.addClass('haburger')
+  
+  }
+  else{
+    normalNavbar.removeClass('haburger')
+  }
+})
+
 
 
 

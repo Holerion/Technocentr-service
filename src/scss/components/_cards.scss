@@ -1,105 +1,80 @@
-:root{
-    --background-dark: #2d3548;
-    --text-light: rgba(255,255,255,0.6);
-    --text-lighter: rgba(255,255,255,0.9);
-    --spacing-s: 8px;
-    --spacing-m: 16px;
-    --spacing-l: 24px;
-    --spacing-xl: 32px;
-    --spacing-xxl: 64px;
-    --width-container: 1200px;
+.cards{
+    &.img2{
+        background-image: url(../img/work/card/1.webp);
     }
+    background-size: cover;
+    height: 800px;
+    display: grid;
+    padding: 2%;
+    
+    .cards-container{
+        max-height: max-content;
+        width: clamp(800px, 80%,  1500px);
 
-    .preposition{
-        padding: 150px 100px;
-    }
-
-.Cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-      
-      
-      .card-grid{
+        margin: auto;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: var(--spacing-l);
-        grid-row-gap: var(--spacing-l);
-        width: 100%;
-        margin-bottom: 30px;
-        margin-top: 50px;
-      }
-      
-      @media(min-width: 540px){
-        .card-grid{
-          grid-template-columns: repeat(2, 1fr); 
+        &.first{
+            grid-template-columns: auto 300px 300px;
+            grid-template-rows: 300px 300px ;
         }
-      }
-      
-      @media(min-width: 960px){
-        .card-grid{
-          grid-template-columns: repeat(4, 1fr); 
+        &.second{
+            grid-template-columns: 300px 300px auto;
+            grid-template-rows: 300px 300px ;
         }
-      }
-      
-      .card{
-        list-style: none;
-        position: relative;
-        height: 200px;
-      }
-      
-      .card:before{
-        content: '';
-        display: block;
-        padding-bottom: 150%;
-        width: 100%;
-      }
-      
-      .card__background{
-        background-size: cover;
-        background-position: center;
-        border-radius: var(--spacing-l);
-        bottom: 0;
-        filter: brightness(0.75) saturate(1.2) contrast(0.85);
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transform-origin: center;
-        trsnsform: scale(1) translateZ(0);
-        transition: 
-          filter 200ms linear,
-          transform 200ms linear;
-      }
-      
-      .card:hover .card__background{
-        transform: scale(1.05) translateZ(0);
-      }
-      
-      .card-grid:hover > .card:not(:hover) .card__background{
-        filter: brightness(0.5) saturate(0) contrast(1.2) blur(5px);
-      }
-      
-      .card__content{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        left: 0;
-        padding: var(--spacing-l);
-        position: absolute;
-        top: 0;
-      }
-      
 
-      
-      .card__heading{
-        color: var(--text-lighter);
-        font-size: 1.4em;
-        text-shadow: 2px 2px 5px rgb(0, 0, 0);
-        line-height: 1.4;
-      }
+        .span{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        gap: 40px;
+        
+    }
+
+    .card{
+        border-radius: 25px;
+        padding: 25px;
+        display: grid;
+        grid-template-rows: 60px 30px 100px 30px;
+        gap: 10px;
+        box-shadow: 2px 2px 15px 15px rgba(0, 0, 0, 0.219);
+        svg{
+            font-size: 3em;
+        }
+        a{
+            width: max-content;
+            border-bottom: 2px solid;
+        }
+        p{
+            font-size: 0.8em;
+        }
+        
+        &:nth-child(1){
+            grid-column-start: var(--i);
+            *{
+                color: black;
+            }
+            background-color: white;
+        }
+        &:nth-child(2){
+            grid-column-start: var(--i);
+            *{
+                color: white;
+            }
+            background-color: rgb(4, 76, 124);
+        }
+        &:nth-child(3){
+            grid-column-start: var(--i);
+            *{
+                color: white;
+            }
+            background-color: rgb(58, 58, 58);
+        }
+        &:nth-child(4){
+            grid-column-start: var(--i);
+            *{
+                color: black;
+            }
+            background-color: white;
+        }
+    }
 }
