@@ -161,7 +161,11 @@
 
     padding: 5px 100px;
 
+    .logo{
+      height: 60px !important;
+    }
     .link-list {
+      height: 70px;
       display: flex;
       align-items: center;
 
