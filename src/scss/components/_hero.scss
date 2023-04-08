@@ -342,7 +342,7 @@ body {
     backface-visibility: hidden;
     background-color: #111;
     overflow: hidden;
-    @include bg_overlay(#29235c, 0.7);
+    @include bg_overlay( lighten($thr-color,10 ), 0.4);
   }
 
 

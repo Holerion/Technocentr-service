@@ -2,22 +2,61 @@
 
 footer{
     height: 500px;
-    background-color: $fif-color;
+    @media screen and (max-width: 800px) {
+        height: max-content;
+      }
+
+    background-color: $thr-color;
+    color: white;
 padding:5% 20% ;
+@media screen and (max-width: 1400px) {
+    padding:5% 10% ;
+  }
+
     .links{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+        grid-template-columns: 4fr 2fr;
+        
+        @media screen and (max-width: 800px) {
+            grid-template-columns: 1fr;
+            place-items: center;
+          }
 
         gap: 25px;
+        .link-list{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+            grid-template-rows: auto 50px;
+            gap: 15px; 
+            
+            @media screen and (max-width: 600px) {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 50px;
+                gap: 10px; 
+              }
+
+
+            .span{
+                font-size: 0.8em;
+                padding-top: 50px;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                @media screen and (max-width: 600px) {
+                    padding-top: 20px;
+                    grid-column-end: 3;
+                 }
+            }
+        }
         .link{
             span{
                 display: inline-block;
-                font-size: 1.3em;
+                font-size: 1.2em;
                 font-weight: 700;
                 min-height: 50px;
             }
             margin-top: 10px;
-            font-size: 0.8em;
+            font-size: 0.6em;
         }
     }
 
@@ -29,5 +68,7 @@ padding:5% 20% ;
         font-size: 0.6em;
         justify-content: space-between;
     }
+
+
 
 }

@@ -65,10 +65,14 @@ function showTest(){
   sec_list.toggleClass('show')
   
   if(sec_list.hasClass('show')){
-    $('.normal-navbar').css({'background-color':'#82074a','color':'white'})
+    $('.normal-navbar').css({'background-color':'#181D31','color':'white'})
+    $('.logo').attr('src','./src/img/logo_technocentr_w.svg');
+    
   }
-  else
-  $('.normal-navbar').css({'background-color':'#fff', 'color':'black'})
+  else{
+    $('.normal-navbar').css({'background-color':'#fff', 'color':'black'})
+    $('.logo').attr('src','./src/img/logo_technocentr.svg');
+  }
 }
 
 let translate =-100;
