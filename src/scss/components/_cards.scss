@@ -1,30 +1,110 @@
 .cards{
     &.img2{
-        background-image: url(../img/work/card/1.webp);
+        background-image: url(../img/work/card/1.webp);        
     }
     background-size: cover;
-    height: 800px;
+    min-height: 800px;
+    height: max-content;
     display: grid;
     padding: 2%;
     
     .cards-container{
         max-height: max-content;
-        width: clamp(800px, 80%,  1500px);
+        width: clamp(200px, 80%,  1500px);
 
         margin: auto;
         display: grid;
+        
+
+
         &.first{
             grid-template-columns: auto 300px 300px;
             grid-template-rows: 300px 300px ;
+            grid-template-areas:
+            "i f s"
+            "i t fi";
+
+
+            @media screen and (max-width: 1600px) {
+                grid-template-columns: auto 250px 250px;
+                grid-template-rows: 250px 250px ;
+                font-size: 0.8em;
+            }
+
+            @media screen and (max-width: 1400px) {
+                grid-template-rows: 250px 250px 250px ;
+                font-size: 1em;     
+                grid-template-areas:
+                "i i f"
+                "i i s"
+                ". fi t";
+            }
+            @media screen and (max-width: 800px) {                
+                grid-template-columns: 250px 250px;
+                grid-template-rows: 250px 250px ;
+                font-size: 1em;     
+                gap: 10px;
+                grid-template-areas:
+                "i f"
+                "i s"
+                "fi t";
+            }
+
+
+            @media screen and (max-width: 600px) {                
+                grid-template-columns: auto ;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                font-size: 1em;     
+                grid-template-areas:
+                "i "
+                "f"
+                "s"
+                "fi"
+                "t";
+            }
         }
+        
         &.second{
             grid-template-columns: 300px 300px auto;
             grid-template-rows: 300px 300px ;
+            
+            grid-template-areas:
+            "f s i"
+            "t fi i";
+
+            @media screen and (max-width: 1600px) {
+                grid-template-columns: 250px 250px;
+                grid-template-rows: 250px 250px ;
+                font-size: 0.8em;
+            }
+            
+            @media screen and (max-width: 1400px) {   
+                width: max-content;
+                font-size: 1em;             
+                grid-template-columns: 250px 250px ;
+                grid-template-rows: 250px 250px  ;
+
+                grid-template-areas:
+                "f s"
+                "fi t";
+            }
+
+            
+            @media screen and (max-width: 600px) {                  
+                width: clamp(200px, 80%,  1500px);            
+                grid-template-columns: auto ;
+                grid-template-rows: 1fr 1fr 1fr 1fr ;
+                font-size: 1em;     
+                grid-template-areas:
+                "f"
+                "s"
+                "fi"
+                "t";
+            }
         }
 
-        .span{
-            grid-row-start: 1;
-            grid-row-end: 3;
+        .span{            
+            grid-area:i;
         }
         gap: 40px;
         
@@ -34,9 +114,12 @@
         border-radius: 25px;
         padding: 25px;
         display: grid;
-        grid-template-rows: 60px 30px 100px 30px;
+        grid-template-rows: 20% 15% 40% 10%;
         gap: 10px;
         box-shadow: 2px 2px 15px 15px rgba(0, 0, 0, 0.219);
+        h2{
+            font-size: 1.2em;
+        }
         svg{
             font-size: 3em;
         }
@@ -49,28 +132,28 @@
         }
         
         &:nth-child(1){
-            grid-column-start: var(--i);
+            grid-area:f;
             *{
                 color: black;
             }
             background-color: white;
         }
         &:nth-child(2){
-            grid-column-start: var(--i);
+            grid-area:s;
             *{
                 color: white;
             }
             background-color: rgb(4, 76, 124);
         }
         &:nth-child(3){
-            grid-column-start: var(--i);
+            grid-area:t;
             *{
                 color: white;
             }
             background-color: rgb(58, 58, 58);
         }
         &:nth-child(4){
-            grid-column-start: var(--i);
+            grid-area:fi;
             *{
                 color: black;
             }
@@ -78,3 +161,9 @@
         }
     }
 }
+
+
+
+
+
+
