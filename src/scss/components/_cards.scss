@@ -3,7 +3,7 @@
         background-image: url(../img/work/card/1.webp);        
     }
     background-size: cover;
-    min-height: 800px;
+    min-height: 600px;
     height: max-content;
     display: grid;
     padding: 2%;
@@ -18,8 +18,9 @@
 
 
         &.first{
-            grid-template-columns: auto 300px 300px;
-            grid-template-rows: 300px 300px ;
+            grid-template-columns: auto 250px 250px;
+            grid-template-rows: 250px 250px ;
+            font-size: 0.8em;
             grid-template-areas:
             "i f s"
             "i t fi";
@@ -43,7 +44,6 @@
                 grid-template-columns: 250px 250px;
                 grid-template-rows: 250px 250px ;
                 font-size: 1em;     
-                gap: 10px;
                 grid-template-areas:
                 "i f"
                 "i s"
@@ -53,10 +53,10 @@
 
             @media screen and (max-width: 600px) {                
                 grid-template-columns: auto ;
-                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: repeat(5 , 200px);
                 font-size: 1em;     
                 grid-template-areas:
-                "i "
+                "i"
                 "f"
                 "s"
                 "fi"
@@ -65,9 +65,9 @@
         }
         
         &.second{
-            grid-template-columns: 300px 300px auto;
-            grid-template-rows: 300px 300px ;
-            
+            grid-template-columns: 250px 250px auto;
+            grid-template-rows: 250px 250px ;
+            font-size: 0.8em;
             grid-template-areas:
             "f s i"
             "t fi i";
@@ -93,7 +93,7 @@
             @media screen and (max-width: 600px) {                  
                 width: clamp(200px, 80%,  1500px);            
                 grid-template-columns: auto ;
-                grid-template-rows: 1fr 1fr 1fr 1fr ;
+                grid-template-rows: repeat(4 , 200px);
                 font-size: 1em;     
                 grid-template-areas:
                 "f"
