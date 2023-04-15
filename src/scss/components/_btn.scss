@@ -2,7 +2,7 @@
 
 
 .btn-primary{
-    padding:10px 15px;
+    padding:10px 25px;
     text-transform: uppercase;
     color: white !important;
     font-size: 0.8em;
@@ -20,5 +20,10 @@
     }
 }
 
-
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 

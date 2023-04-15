@@ -87,25 +87,24 @@ function showTest(){
 
 let translate =-100;
 
-$('.menu-icon__cheeckbox').click(
-  function(){
 
+  function hamburgerClick(el){
     if(translate==-100){
       translate=0
-      this.checked=true
+      el.checked=true
     }else if(translate==0){
       translate-=100
-      this.checked=false
+      el.checked=false
     }else{
       translate-=100
-      this.checked=true
+      el.checked=true
     }
 
     console.log('translate: ', translate);
 
     $('.hamburger-navbar .menu').css('transform',`translateX(${translate}vw)`)
   }
-  )
+
   
   function showTestHamburger(){
     translate+=100;

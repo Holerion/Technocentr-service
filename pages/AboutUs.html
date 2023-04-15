@@ -14,140 +14,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet" />
 
-
-    <base href="/">
+    <base href="/" />
   </head>
   <body style="background: none" onload="setActive(0)">
     <header class="navbar"></header>
 
-    <main>
-      <section class="hero" role="main" style="padding: 0">
-        <section class="velo-slides" data-velo-slider="on" data-velo-theme="light">
-          <section class="velo-slide">
-            <span class="velo-slider__hint"
-              ><span><span>tehnocentr</span></span></span
-            >
-            <div class="velo-slide__bg">
-              <figure class="velo-slide__figure" style="background-image: url(./src/img/work/hero-slide/1.webp)"></figure>
+    <main class="aboutUs">
+      <section>
+        <div class="content-hero">
+          <div class="text">
+            <div class="title-left">
+              <h1>Компанія Техноцентр Сервіс</h1>
+              <div class="separator"></div>
             </div>
 
-            <header class="velo-slide__header">
-              <h3 class="velo-slide__title">
-                <span class="oh"><span>Компанія</span></span
-                ><span class="oh"><span>Техноцентр Сервіс</span></span>
-              </h3>
-              <p class="velo-slide__text">
-                <span class="oh"
-                  ><span
-                    >Виконуємо роботи з відновлення зношених або пошкоджених деталей, вузлів машин та механізмів з наступних сфер
-                    їх застосування.</span
-                  ></span
-                >
-              </p>
-              <span class="velo-slide__btn"
-                ><a class="btn-draw btn--white" href="#scene1"
-                  ><span class="btn-draw__text"><span>детальніше</span></span></a
-                ></span
-              >
-            </header>
-          </section>
+            <p>
+              Співробітники нашої компанії в процесі роботи накопичили практичний досвід виготовлення та відновлення деталей та
+              вузлів спецтехніки, що впливає на кінцевий результат виконуваних робіт та забезпечує нашим клієнтам безпроблемну
+              експлуатацію кар’єрної, будівельної та сільськогосподарської техніки.
+            </p>
+            <p>
+              ТОВ «Техноцентр Сервіс» надає послуги з відновлення працездатності спецтехніки, технологічного виробничого
+              обладнання, а також виготовлення окремих деталей, вузлів машин та механізмів гірничодобувної, будівельної та
+              сільськогосподарської галузі.
+            </p>
+          </div>
 
-          <section class="velo-slide">
-            <span class="velo-slider__hint"
-              ><span><span>Відновлення спецтехніки</span></span></span
-            >
-            <div class="velo-slide__bg">
-              <figure class="velo-slide__figure" style="background-image: url(./src/img/work/hero-slide/10.webp)"></figure>
-            </div>
+          <div class="img">
+            <img src="../src/img/work/hero-slide/1.webp" width="100%" height="400px" alt="" />
+          </div>
+        </div>
 
-            <header class="velo-slide__header">
-              <h3 class="velo-slide__title">
-                <span class="oh"><span>Відновлення </span></span><span class="oh"><span>спецтехніки</span></span>
-              </h3>
-              <p class="velo-slide__text">
-                <span class="oh"
-                  ><span
-                    >Виконуємо роботи з відновлення зношених або пошкоджених деталей, вузлів машин та механізмів з наступних сфер
-                    їх застосування</span
-                  ></span
-                >
-              </p>
-              <span class="velo-slide__btn"
-                ><a class="btn-draw btn--white" href="#scene1"
-                  ><span class="btn-draw__text"><span>детальніше</span></span></a
-                ></span
-              >
-            </header>
-          </section>
-
-          <section class="velo-slide">
-            <span class="velo-slider__hint"
-              ><span><span>Розробка та виготовленню</span></span></span
-            >
-            <div class="velo-slide__bg">
-              <figure class="velo-slide__figure" style="background-image: url()"></figure>
-              <div class="velo-slide__vid-wrap">
-                <video autoplay="" class="velo-slide__vid" loop="" poster="">
-                  <source src="./src/img/work/video-slide-1.mp4" type="video/mp4" />
-                  Wait, are you still using IE? Bruv. Go get Chrome, or kick rocks.
-                </video>
-              </div>
-            </div>
-            <header class="velo-slide__header">
-              <h3 class="velo-slide__title">
-                <span class="oh"><span>Розробка </span></span><span class="oh"><span>та виготовленню</span></span>
-              </h3>
-              <p class="velo-slide__text">
-                <span class="oh"
-                  ><span
-                    >Надаємо повний комплект послуг з розробки та подальшого виготовлення деталей, вузлів машин та
-                    механізмів</span
-                  ></span
-                >
-              </p>
-              <span class="velo-slide__btn"
-                ><a class="btn-draw btn--white" href="#scene2"
-                  ><span class="btn-draw__text"><span>детальніше</span></span></a
-                ></span
-              >
-            </header>
-          </section>
-
-          <section class="velo-slide">
-            <span class="velo-slider__hint"
-              ><span><span>Послуги</span></span></span
-            >
-            <div class="velo-slide__bg">
-              <figure class="velo-slide__figure" style="background-image: url(./src/img/work/hero-slide/4.webp)"></figure>
-            </div>
-            <header class="velo-slide__header">
-              <h3 class="velo-slide__title">
-                <span class="oh"><span>Послуги</span></span>
-              </h3>
-              <p class="velo-slide__text">
-                <span class="oh"><span>Надаємо послуги з виконання вузькоспрямовних та спеціалізованих видів робіт</span></span>
-              </p>
-              <span class="velo-slide__btn"
-                ><a class="btn-draw btn--white" href="#scene3"
-                  ><span class="btn-draw__text"><span>детальніше</span></span></a
-                ></span
-              >
-            </header>
-          </section>
-
-          <nav class="velo-slides-nav">
-            <ul class="velo-slides-nav__list">
-              <li>
-                <a class="js-velo-slides-prev velo-slides-nav__prev inactive" href="#0"><i class="fa-solid fa-circle-up"></i></a>
-              </li>
-              <li>
-                <a class="js-velo-slides-next velo-slides-nav__next" href="#0"><i class="fa-solid fa-circle-down"></i></a>
-              </li>
-            </ul>
-          </nav>
-        </section>
+        <div class="content">
+          <p>
+            Кваліфікація співробітників з багаторічним практичним досвідом, власний верстатний парк обладнання та наявність
+            матеріалів на нашому складі дозволяють здійснити ремонт екскаваторів, фронтальних навантажувачів, бульдозерів,
+            грейдерів та іншої великогабаритної техніки марок: Caterpillar, Komatsu, Hitachi, Hyundai, Doosan, Volvo, а також
+            технологічного обладнання світових виробників – у найкоротші терміни.
+          </p>
+          <p>
+            Один із основних напрямків роботи компанії — виготовлення навісного обладнання та ковшів екскаваторів/фронтальних
+            навантажувачів, робочим об’ємом 1м3 до 25м3, у виконаннях – загального призначення, посилені, скельні, скельні екстра
+            та майнінгові. За бажанням замовника, можливо виконати ремонт ковшів з різним ступенем складності і в будь-яких
+            комбінаціях, будь то розширення ковша або заміна конструктивних елементів.
+          </p>
+          <p>
+            Строк виконання робіт та умови поставки продукції обговорюються та розраховуються індивідуально. На продукцію та
+            послуги, виконані нашою компанією, надається гарантія. Для зручності наших клієнтів деякі види робіт можливо
+            виконувати на території замовника.
+          </p>
+          
+        </div>
       </section>
-
       <section class="main-content">
         <div class="title-center">
           <h2>Наші переваги</h2>
@@ -253,23 +171,69 @@
         </ul>
       </section>
 
-      <div class="title-center" style="margin-top: 200px">
-        <h2>Виробничі потужності</h2>
-        <div class="separator"></div>
-      </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2552.2288022278312!2d30.24281201593247!3d50.23163031098847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4b128237ee221%3A0xd67714cceb16f1cc!2z0KLQntCSICLQotC10YXQvdC-0YbQtdC90YLRgCDQodC10YDQstGW0YEi!5e0!3m2!1sru!2sua!4v1678707523541!5m2!1sru!2sua"
-        width="100%"
-        height="400"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+
+      <section>
+
+        <div class="container_text_specific">
+            <div class="title-left">
+                <h2>Клінтоорієнтованість нашої компанії та робота на результат – це основа довгострокового співробітництва</h2>
+                <div class="separator"></div>
+            </div>
+            <p>
+                "Техноцентр сервіс" є високо клієнтоорієнтованою компанією, забезпечуючи своїм клієнтам максимальний комфорт і задоволення в процесі співпраці. Ми розуміємо важливість високоякісного обслуговування, швидкості виконання робіт та індивідуального підходу до кожного клієнта. Наші досвідчені фахівці завжди готові вислухати потреби наших клієнтів, надати професійні рекомендації і забезпечити виконання робіт в найкоротші терміни. Ми також надаємо гарантію на наші продукти та послуги, щоб забезпечити повне задоволення наших клієнтів. Крім того, ми готові виконувати роботи на території замовника, щоб максимально спростити процес співпраці. Клієнтоорієнтованість є основою нашої філософії роботи, і ми завжди ставимо інтереси наших клієнтів на перше місце.
+            </p> 
+          
+    
+
+            <div class="btn-container">
+                <a href="" class="btn-primary">Наші роботи</a>
+            </div>
+        </div>
+      </section>
+
+
+
+
+      <section>
+        <div class="title-center">
+            <h1>Новини</h1>
+            <div class="separator"></div>
+        </div>
+        
+
+
+
+
+
+
+        <section class="works">
+            <div class="section">
+              <div class="grid">
+
+                <div class="item item--medium" style="order: 12;"></div>
+                <div class="item item--medium" style="order: 12;"></div>
+                <div class="item item--medium" style="order: 12;"></div>
+                <div class="item" style="order: 12;"></div>
+                <div class="item" style="order: 12;"></div>
+                <div class="item" style="order: 12;"></div>
+                <div class="item" style="order: 12;"></div>
+                <div class="item" style="order: 12;"></div>
+                <div class="item" style="order: 12;"></div>
+    
+
+   
+
+              </div>
+            </div>
+          </section>
+      </section>
+
+
+
+      
     </main>
 
-    <footer>
-    </footer>
+    <footer></footer>
   </body>
 
   <script src="/script/wow.min.js"></script>

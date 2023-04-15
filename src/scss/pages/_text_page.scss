@@ -1,0 +1,113 @@
+.aboutUs{
+    padding: 200px 15%; 
+
+    p{
+        margin-top: 20px;
+        letter-spacing: 0.5px;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+    .content-hero{
+        display: grid;
+        grid-template-columns: 10fr 13fr;
+        gap: 50px;  
+             
+       &::after{
+        content: '';
+        grid-column-start: 1;
+        grid-column-end: 3;
+        align-self: center;
+        justify-self: center;
+        display: inline-block;
+        width: 300px;
+        border: 1px solid $fir-color;
+        margin-top: 50px;
+        margin-bottom: 50px;
+       }
+    }
+  
+
+
+
+    .container_text_specific{
+        background-color: $thr-color;
+        padding: 100px ;
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        *{
+            color: rgb(255, 255, 255);
+        }
+        p{
+            font-weight: 100;
+            color: rgba(255, 255, 255, 0.527);
+        }
+        .btn-container{
+            margin-top: 100px;
+        }
+
+    }
+   
+
+    section{
+        margin-bottom:200px ;
+        margin-top:200px ;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
