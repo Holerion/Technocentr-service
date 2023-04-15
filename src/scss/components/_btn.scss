@@ -3,14 +3,22 @@
 
 .btn-primary{
     padding:10px 15px;
+    text-transform: uppercase;
     color: white !important;
+    font-size: 0.8em;
+    a{
+        color: white !important;
+    }
     border-radius: 50px;
-    background-color:$sec-color;
+    background-color:$fir-color;
     transition: 1s !important;
     box-shadow:0;
 
     &:hover{
-        box-shadow:0px 0px 50px inset lighten($sec-color, 10);
+        box-shadow:0px 0px 50px inset lighten($fir-color, 10);
         transition: .5s !important;
     }
 }
+
+
+

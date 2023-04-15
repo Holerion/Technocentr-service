@@ -51,7 +51,7 @@
       }
 
       .fast-contact li {
-        margin-right: 15px;
+        margin-right: 25px;
 
         opacity: 0.5;
       }
@@ -70,8 +70,16 @@
           color: $fir-color;
         }
       }
-      li {
+      li {        
+        text-transform: uppercase;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+
         color: inherit;
+        a{
+          color: inherit;
+
+        }
 
         cursor: pointer;
         transition: 0.5s color ease-out;
@@ -101,6 +109,7 @@
     * {
       color: inherit;
     }
+
 
     &::after {
       content: "";
@@ -135,7 +144,7 @@
   }
 
   span {
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 700;
   }
 
@@ -173,7 +182,7 @@
         border-right: none;
       }
 
-      .fast-contact,
+      .fast-contact,      
       .laguage {
         display: none;
       }
