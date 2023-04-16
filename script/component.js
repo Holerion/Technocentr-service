@@ -2,7 +2,7 @@ const base = 'pages/'
 
 const AboutUs =  base + 'AboutUs.html'
 const OurWorks = base + 'OurWorks.html'
-const contacts = base + 'OurWorks.html'
+const contacts = base + 'Contacts.html'
 
 
 

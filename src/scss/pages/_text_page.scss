@@ -1,5 +1,5 @@
-.aboutUs{
-    padding: 200px 15%; 
+.Page{
+    padding: 150px 15%; 
 
     p{
         margin-top: 20px;
@@ -54,22 +54,6 @@
         margin-top:200px ;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 }
 
@@ -84,30 +68,25 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.PageContacts{
+    li{
+        margin-top: 15px;
+    }
+    .contacts{
+        padding:0 200px ;
+        display: grid;
+        grid-template-columns: 10fr 15fr;
+        gap: 100px;
+    }
+    .social{
+        background-color: white;
+        padding: 50px 0;
+        box-shadow: 2px 2px 55px rgba(6, 13, 29, 0.295);
+        .social-links{
+            font-size: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    }
+}

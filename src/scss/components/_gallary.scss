@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo');
+.gallary{
+
 
 .grid {
   display: grid;
@@ -17,7 +18,6 @@
   color: #fff;
   grid-column-start: auto;
   grid-row-start: auto;
-  color: #fff;
   background-size: cover;
   background-position: center;
   box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
@@ -66,23 +66,30 @@
       grid-row-end: span 1;
     }
   }
+
+  $color:$thr-color;
   
   &__details {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    height: 80%;
+    position: relative;    
     z-index: 1;
-    padding: 15px;
-    color: #444;
-    background: #fff;
+    padding: 25px;
+    color: #ffffff;
+    background: linear-gradient( rgba($color,0),  $color );
     text-transform: lowercase;
-    letter-spacing: 1px;
-    color: #828282;
-    
-    &:before {
-      content: counter(item-counter);
-      font-weight: bold;
-      font-size: 1.1rem;
-      padding-right: 0.5em;
-      color: #444;
+    letter-spacing: 1px;  
+    .title-center{
+      margin: 0;
     }
+    h2{
+      font-size: 1em;
+      color: white;
+    }
+  
   }
+}
 }
