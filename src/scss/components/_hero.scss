@@ -198,7 +198,7 @@ $btn-draw-size: 1px;
   .btn-draw__text:after,
   .btn-draw__text > span:before,
   .btn-draw__text > span:after {
-    background-color: #fff;
+    background-color: #eaeaf0;
   }
 
   &:hover,
@@ -423,7 +423,7 @@ body {
 
 .velo-slides[data-velo-theme="light"] {
   background: $sec-color;
-  border-bottom: 1em solid #fff;
+  border-bottom: 1em solid #eaeaf0;
 
   .velo-slide {
     margin-top: -1em;

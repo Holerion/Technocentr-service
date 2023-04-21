@@ -5,100 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ремонт великогабаритної спецтехніки | Техноцентр Сервіс</title>
-    <link rel="icon" type="image/x-icon" href="./src/img/cropped-favicon-180x180.png" />
-    <link rel="stylesheet" href="../src/css/style.min.css" />
+    <link rel="icon" type="image/x-icon" href="/src/img/cropped-favicon-180x180.png" />
+    <link rel="stylesheet" href="/src/css/style.min.css" />
     <script src="https://kit.fontawesome.com/03abd041c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/animate.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet" />
+
+    <base href="/" />
   </head>
-  <body  onload="setActive(1,2,3)">
-    <header>
-      <nav class="expand">        
-      </nav>
-      <nav class="hamburger">
-      </nav>
-    </header>
+  <body>
+    <header class="navbar"></header>
 
     <main>
-      <section
-        class="hero"
-        style="padding-top: 180px; display: flex; align-items: center; justify-content: center; flex-direction: column"
-      >
-        <h1>Ремонт великогабаритної спецтехніки</h1>
-        <div class="img-div" style="background-image: url(../src/img/work/6.jpg)"></div>
-      </section>
+      <section class="Page textPage">
+        <div class="container_text_specific">
+          <div class="title-center">
+            <h1>Ремонт великогабаритної спецтехніки</h1>
+            <div class="separator"></div>
+          </div>
+          <p>Виконуємо роботи з відновлення зношених та пошкоджених деталей, вузлів машин та механізмів</p>
+        </div>
 
-      <div class="text-container">
-        <p>Виконуємо роботи з відновлення зношених та пошкоджених деталей, вузлів машин та механізмів</p>
-      </div>
-
-      <section class="dl-blurbs" style="margin: 0">
-        <ul>
+        <ul class="grid-list">
           <li>
-            <dl>
-              <dt><h2>Екскаватори</h2></dt>
-              <dd>Ремонтом будь-якого обсягу і будь-якої складності від планово-попереджувального до капітального.</dd>
-            </dl>
+            <caption>
+              <h2>Екскаватори</h2>
+            </caption>
+            <p>Ремонтом будь-якого обсягу і будь-якої складності від планово-попереджувального до капітального.</p>
           </li>
-
           <li>
-            <dl>
-              <dt><h2>Самоскиди</h2></dt>
-              <dd>
-                Компанія "Техноцентр сервіс" має необхідні ресурси для ремонту і відновлення механіки і робочих поверхонь
-                спеціалізованої техніки в Україні.
-              </dd>
-            </dl>
+            <caption>
+              <h2>Самоскиди</h2>
+            </caption>
+            <p>
+              Компанія "Техноцентр сервіс" має необхідні ресурси для ремонту і відновлення механіки і робочих поверхонь
+              спеціалізованої техніки в Україні.
+            </p>
           </li>
-
           <li>
-            <dl>
-              <dt><h2>Навантажувачі</h2></dt>
-              <dd>
-                Досвідчені майстри готові запропонувати клієнтам оптимальні за вартістю, тимчасовими витратами і надійності
-                рішення в тих випадках, коли необхідно провести ремонт і обслуговування навантажувачів.
-              </dd>
-            </dl>
+            <caption>
+              <h2>Навантажувачі</h2>
+            </caption>
+            <p>
+              Досвідчені майстри готові запропонувати клієнтам оптимальні за вартістю, тимчасовими витратами і надійності рішення
+              в тих випадках, коли необхідно провести ремонт і обслуговування навантажувачів.
+            </p>
           </li>
-
           <li>
-            <dl>
-              <dt><h2>Бульдозери</h2></dt>
-              <dd>Наша ремонтна база дає можливість відновити функціональність техніки і продовжити термін її служби.</dd>
-            </dl>
+            <caption>
+              <h2>Бульдозери</h2>
+            </caption>
+            <p>Наша ремонтна база дає можливість відновити функціональність техніки і продовжити термін її служби.</p>
           </li>
-
           <li>
-            <dl>
-              <dt><h2>Грейдери</h2></dt>
-              <dd>
-                На складі підприємства доступні ходові запчастини для різних модифікацій грейдерів. У міру необхідності,
-                комплектуючі елементи також в стислі терміни доставляються від постачальників.
-              </dd>
-            </dl>
+            <caption>
+              <h2>Грейдери</h2>
+            </caption>
+            <p>
+              На складі підприємства доступні ходові запчастини для різних модифікацій грейдерів. У міру необхідності,
+              комплектуючі елементи також в стислі терміни доставляються від постачальників.
+            </p>
           </li>
-
           <li>
-            <dl>
-              <dt><h2>Бурові установки</h2></dt>
-              <dd>Фахівці компанії здатні оперативно повернути працездатність бурової установки.</dd>
-            </dl>
+            <caption>
+              <h2>Бурові установки</h2>
+            </caption>
+            <p>Фахівці компанії здатні оперативно повернути працездатність бурової установки.</p>
           </li>
-
           <li>
-            <dl>
-              <dt><h2>Трали</h2></dt>
-              <dd>
-                Ми маємо в своєму розпорядженні одну з кращих в Україні ремонтних баз для відновлення працездатності спеціальної
-                техніки.
-              </dd>
-            </dl>
+            <caption>
+              <h2>Трали</h2>
+            </caption>
+            <p>
+              Ми маємо в своєму розпорядженні одну з кращих в Україні ремонтних баз для відновлення працездатності спеціальної
+              техніки.
+            </p>
           </li>
         </ul>
-      </section>
-<section>
-      <div class="text-container" style="margin-bottom: 100px">
-        <p>
-          <strong> При постійній співпраці з нашою компанією можна розраховувати на зниження вартості ремонтних робіт. </strong>
-        </p>
 
         <p>
           Парки вантажопідйомної, будівельної та дорожньої спеціальної техніки на деяких підприємствах складаються з десятків
@@ -116,23 +102,17 @@
           наявності матеріально-технічної бази:
         </p>
 
-        <ul class="list-counter circle">
+        <ul class="list-counter">
           <li>
-            
             У нас ви знайдете всі необхідні умови. Компанія “Техноцентр” присутня на ринку послуг з ремонту та обслуговування усіх
             видів спецтехніки протягом 20 років;
           </li>
           <li>
-            
             здійснюємо ремонт та технічне обслуговування дорожньої спецтехніки – грейдерів, віброкотків, асфальтоукладачів та
             іншого;
           </li>
+          <li>звертайтесь, якщо ваша будівельна спецтехніка (екскаватори, бульдозери) потребує термінових ремонтних робіт;</li>
           <li>
-             звертайтесь, якщо ваша будівельна спецтехніка (екскаватори, бульдозери) потребує термінових ремонтних
-            робіт;
-          </li>
-          <li>
-            
             ви можете замовити відновлення кар’єрної техніки – дробарок та грохотів, транспортерів та фронтальних навантажувачів.
           </li>
         </ul>
@@ -149,13 +129,29 @@
           послуги, виконані нашою компанією, надається гарантія. Для зручності наших клієнтів деякі види робіт можливо виконувати
           на території замовника.
         </p>
-
-        <p>Будь ласка, звертайтесь!</p>
-      </div>
-    </section>
+      </section>
     </main>
 
     <footer></footer>
-    <script src="/script/script.js"></script>
   </body>
+
+  <script src="/script/wow.min.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass: "wow", // default
+      animateClass: "animated", // default
+      offset: 250, // default
+      mobile: true, // default
+      live: true, // default
+    });
+    wow.init();
+  </script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"
+  ></script>
+  <script src="/script/script.js"></script>
+  <script src="/script/component.js"></script>
 </html>

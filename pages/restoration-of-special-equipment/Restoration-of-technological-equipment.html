@@ -5,36 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Відновлення технологічного обладнання | Техноцентр Сервіс</title>
-    <link rel="icon" type="image/x-icon" href="./src/img/cropped-favicon-180x180.png" />
-    <link rel="stylesheet" href="../src/css/style.min.css" />
+    <link rel="icon" type="image/x-icon" href="/src/img/cropped-favicon-180x180.png" />
+    <link rel="stylesheet" href="/src/css/style.min.css" />
     <script src="https://kit.fontawesome.com/03abd041c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/animate.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet" />
+
+    <base href="/" />
   </head>
-  <body onload="setActive(1,2,5)">
-    <header>
-      <nav class="expand"></nav>
-      <nav class="hamburger"></nav>
-    </header>
+  <body>
+    <header class="navbar"></header>
 
     <main>
-      <section
-        class="hero"
-        style="padding-top: 180px; display: flex; align-items: center; justify-content: center; flex-direction: column"
-      >
-        <h1>Відновлення технологічного обладнання</h1>
-        <div class="img-div" style="background-image: url(../src/img/work/6.jpg)"></div>
-      </section>
-
-      <div class="text-container">
-        <p>Виконуємо роботи з відновлення зношених та пошкоджених деталей, вузлів машин та механізмів</p>
-      </div>
-
-      <div class="text-container" style="margin-bottom: 100px">
-        <ul class="list-counter circle">
-          <li>Дробарки</li>
-          <li>Бункери</li>
-          <li>Димососи</li>
-          <li>Живильники</li>
-          <li>Вали великогабаритні</li>
+      <section class="Page textPage">
+        <div class="container_text_specific">
+          <div class="title-center">
+            <h1>Відновлення технологічного обладнання</h1>
+            <div class="separator"></div>
+          </div>
+          <p>Виконуємо роботи з відновлення зношених та пошкоджених деталей, вузлів машин та механізмів</p>
+        </div>
+        <ul class="specifik-list">
+          <li>
+            <img src="/src/img/work/hero-slide/1.webp" height="200" width="100%" alt="" />
+            <p>Дробарки</p>
+          </li>
+          <li>
+            <img src="/src/img/work/hero-slide/1.webp" height="200" width="100%" alt="" />
+            <p>Бункери</p>
+          </li>
+          <li>
+            <img src="/src/img/work/hero-slide/1.webp" height="200" width="100%" alt="" />
+            <p>Димососи</p>
+          </li>
+          <li>
+            <img src="/src/img/work/hero-slide/1.webp" height="200" width="100%" alt="" />
+            <p>Живильники</p>
+          </li>
+          <li>
+            <img src="/src/img/work/hero-slide/1.webp" height="200" width="100%" alt="" />
+            <p>Вали великогабаритні</p>
+          </li>
         </ul>
 
         <p>
@@ -42,32 +56,41 @@
           швидко зношуються. Серед проявів зносу:
         </p>
 
-        <ul class="list-counter circle">
+        <ul class="list-counter">
           <li>Порушення посадки в сполученнях, зокрема – збільшення зазорів</li>
           <li>Втрата початкової форми поверхонь</li>
           <li>Зменшення необхідних натягів</li>
           <li>Поява мікротріщин, інших механічних пошкоджень</li>
         </ul>
 
-        <p>
-          Коли деталі втрачають свої механічні та фізичні властивості це неминуче в майбутньому призводить до поломок тієї чи
-          іншої міри серйозності, а також до аварій. Щоб не допустити зупинки виробничого процесу та забезпечити безпеку
-          співробітників, потрібно своєчасно ремонтувати технологічне обладнання.
-        </p>
+        <div class="textImgSide">
+          <div>
+            <p>
+              Коли деталі втрачають свої механічні та фізичні властивості це неминуче в майбутньому призводить до поломок тієї чи
+              іншої міри серйозності, а також до аварій. Щоб не допустити зупинки виробничого процесу та забезпечити безпеку
+              співробітників, потрібно своєчасно ремонтувати технологічне обладнання.
+            </p>
 
-        <p>
-          Компанія “Техноцентр Сервіс” пропонує широкий спектр послуг з приведення промислових машин до робочого стану. Часто мова
-          йде не просто про заміну запчастин. Обладнання ремонтної бази нашого підприємства в місті Київ та досвід фахівців дають
-          можливість відновлювати деталі та вузли.
-        </p>
+            <p>
+              Компанія “Техноцентр Сервіс” пропонує широкий спектр послуг з приведення промислових машин до робочого стану. Часто
+              мова йде не просто про заміну запчастин. Обладнання ремонтної бази нашого підприємства в місті Київ та досвід
+              фахівців дають можливість відновлювати деталі та вузли.
+            </p>
 
-        <p>
-          При цьому, на підприємстві проводяться роботи, пов’язані не тільки з технологічним обладнанням. Нами також здійснюється
-          відновлення гідравлічних систем спецтехніки та ряд інших операцій з використанням технологій наплавки та
-          слюсарно-механічної обробки.
-        </p>
+            <p>
+              При цьому, на підприємстві проводяться роботи, пов’язані не тільки з технологічним обладнанням. Нами також
+              здійснюється відновлення гідравлічних систем спецтехніки та ряд інших операцій з використанням технологій наплавки
+              та слюсарно-механічної обробки.
+            </p>
+          </div>
 
-        <h2>Особливості проведення ремонту та відновлення</h2>
+          <img src="/src/img/work/ourWork/10.webp" width="100%" height="450px" alt="" />
+        </div>
+
+        <div class="title-center">
+          <h2>Особливості проведення ремонту та відновлення</h2>
+          <div class="separator"></div>
+        </div>
 
         <p>
           Необхідні операції з відновлення техніки в нас можуть замовити клієнти з будь-якого куточку України. Наші ціни незмінно
@@ -77,7 +100,7 @@
         </p>
 
         <p>Наша компанія відновлює:</p>
-        <ul class="list-counter circle">
+        <ul class="list-counter">
           <li>Вали великогабаритні (посадочні місця підшипників, натяжних втулок, маховиків)</li>
           <li>
             Дробарки (робочу поверхню щік, посадочні місця та шийки вала, ексцентрик, конус, ротор, ударні молоти, різьбові
@@ -86,7 +109,10 @@
           <li>Димососи (корпуси, осі, посадочні місця, отвори)</li>
         </ul>
 
-        <h2>Посилення бункерів, живильників та інших елементів конструкції промислового обладнання</h2>
+        <div class="title-center">
+          <h2>Посилення бункерів, живильників та інших елементів конструкції промислового обладнання</h2>
+          <div class="separator"></div>
+        </div>
 
         <p>
           Займаючись ремонтом механізмів промислового призначення на професійному рівні, ми завжди готові порекомендувати клієнтам
@@ -107,10 +133,29 @@
           спланувати ремонт з найбільш раціональними витратами. За запитом ми надамо вам кейси успішно проведених відновлювальних
           заходів виробничих комплексів гірничодобувної промисловості та ряду інших галузей.
         </p>
-      </div>
+      </section>
     </main>
 
     <footer></footer>
-    <script src="/script/script.js"></script>
   </body>
+
+  <script src="/script/wow.min.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass: "wow", // default
+      animateClass: "animated", // default
+      offset: 250, // default
+      mobile: true, // default
+      live: true, // default
+    });
+    wow.init();
+  </script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"
+  ></script>
+  <script src="/script/script.js"></script>
+  <script src="/script/component.js"></script>
 </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Комплекс послуг по розробці та виготовленню деталей, вузлів машин та механизмів | Техноцентр Сервіс</title>
+    <link rel="icon" type="image/x-icon" href="/src/img/cropped-favicon-180x180.png" />
+    <link rel="stylesheet" href="/src/css/style.min.css" />
+    <script src="https://kit.fontawesome.com/03abd041c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/animate.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet" />
+
+    <base href="/" />
+  </head>
+  <body onload="setContent()">
+    <header class="navbar"></header>
+
+    <main class="Page productionPage">    
+      <section>
+        <div class="title-center">
+          <h1>Наша продукція</h1>
+          <div class="separator"></div>
+        </div>
+
+        <section >
+          <ul id="Production" class="production-conatainer">
+
+          </ul>          
+        </section>
+
+
+
+
+
+        <section  id="fast-contacts-section">
+
+          <div class="fast-contacts">
+          </div>
+          
+
+
+          <div class="container">
+            <div class="title-center">
+              <h2>Зв'яжіться з нами для форомлення Вашого замовлення</h2>
+              <div class="separator"></div>
+            </div>
+            
+            <ul>
+              <li><i class="fa-solid fa-phone"></i> <span> 067 555-49-00</span></li>          
+              <li><i class="fa-solid fa-envelope"></i><span>1tehnocentr@gmail.com </span></li>          
+            </ul>
+          </div>
+
+        </section>
+    </main>
+
+    <footer></footer>
+  </body>
+  
+  <script src="/script/script.js"></script>
+  
+  <script src="/script/wow.min.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass: "wow", // default
+      animateClass: "animated", // default
+      offset: 250, // default
+      mobile: true, // default
+      live: true, // default
+    });
+    wow.init();
+  </script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"
+  ></script>
+  <script src="/script/component.js"></script>
+  <script src="/pages/Production/Production.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.0/velocity.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.0/velocity.ui.js"></script>
+  <script src="/script/gallary.js"></script>
+
+  <script>
+    const contactContainer = $('#fast-contacts-section')
+    
+    
+    const container = $('.fast-contacts ')
+    container.click(function(){
+      contactContainer.css('transform','translateY(-200vh)')
+    })
+
+    
+    setTimeout(() => {
+      const priceBtn = document.querySelectorAll('.item-price');
+      priceBtn.forEach(element => {
+        element.addEventListener('click' ,()=>{
+          contactContainer.css('transform','translateY(0vh)')
+        })
+      });
+      
+    }, 3000);
+
+  </script>
+
+
+  
+</html>

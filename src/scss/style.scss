@@ -19,6 +19,7 @@
 
 @import "./pages/index_pages";
 @import "./pages/text_page";
+@import "./pages/productPage";
 
 
 
@@ -41,6 +42,7 @@ span,p{
   font-family: 'Oswald', sans-serif;
 }
 li,ol{
+  font-family: 'Oswald', sans-serif;
   list-style: none;
 }
 
@@ -69,6 +71,10 @@ html{
     border: 1px solid $fir-color;
     
   }
+
+  &.small{    
+    font-size: 0.8em;
+  }
 }
 
 .title-left{
@@ -78,8 +84,11 @@ html{
   margin-bottom: 50px;
   .separator{
     width: 100px;
-    border: 1px solid $fir-color;
-    
+    border: 1px solid $fir-color;    
+  }
+
+  &.small{    
+    font-size: 0.8em;
   }
 }
 

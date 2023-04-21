@@ -111,3 +111,23 @@ let translate =-100;
     console.log('translate: ', translate);
     $('.hamburger-navbar .menu').css('transform',`translateX(${translate}vw)`)
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

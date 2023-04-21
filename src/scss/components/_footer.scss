@@ -6,21 +6,21 @@ footer{
 
     background-color: $thr-color;
     color: white;
-    padding:4% 15% ;
+    padding:2% 15% ;
     @media screen and (max-width: 1400px) {
-        padding:5% 10% ;
+        padding:2% 10% ;
     }
 
     .links{
         display: grid;
         grid-template-columns: 5fr 250px;
+        gap: 10px;
         
         @media screen and (max-width: 800px) {
             grid-template-columns: 1fr;
             place-items: center;
-          }
-
-        gap: 50px;
+        }
+        
         .link-list{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -41,8 +41,9 @@ footer{
                 grid-column-start: 1;
                 grid-column-end: 5;
 
+                gap: 50px;
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr ;
 
                 @media screen and (max-width: 600px) {
                     padding-top: 20px;
@@ -87,10 +88,10 @@ footer{
 
 
     .company{        
-        padding-top: 50px;
-        margin-top: 50px;
-        padding-bottom: 25px;
-        margin-bottom: 25px;
+        padding-top: 30px;
+        margin-top: 30px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
 
         border-top: 1px solid rgba(255, 255, 255, 0.308);
 
