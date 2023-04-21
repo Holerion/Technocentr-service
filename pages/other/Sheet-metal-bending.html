@@ -5,28 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Гнуття листового металу | Техноцентр Сервіс</title>
-    <link rel="icon" type="image/x-icon" href="../src/img/cropped-favicon-180x180.png">
-    <link rel="stylesheet" href="../src/css/style.min.css" />
+    <link rel="icon" type="image/x-icon" href="/src/img/cropped-favicon-180x180.png" />
+    <link rel="stylesheet" href="/src/css/style.min.css" />
     <script src="https://kit.fontawesome.com/03abd041c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/animate.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet" />
+
+    <base href="/" />
   </head>
-  <body onload="setActive(1,12,16)">
-    <header>
-      <nav class="expand"></nav>
-      <nav class="hamburger"></nav>
-    </header>
+  <body>
+    <header class="navbar"></header>
 
     <main>
-      <section
-        class="hero"
-        style="padding-top: 180px; display: flex; align-items: center; justify-content: center; flex-direction: column"
-      >
-        <h1>Гнуття листового металу</h1>
-        <div class="img-div" style="background-image: url(../src/img/work/6.jpg)"></div>
-      </section>
+      <section class="Page textPage">
+        <div class="container_text_specific">
+          <div class="title-center">
+            <h1>Гнуття листового металу</h1>
+            <div class="separator"></div>
+          </div>
+          <p>Виконуємо роботи з відновлення зношених та пошкоджених деталей, вузлів машин та механізмів</p>
+        </div>
 
-      <section>
-        <div class="text-container">
-          <p>Надаємо послуги з виконання вузькоспрямованих та спеціалізованих видів робіт</p>
+
+        
+        <div class="title-center ">
+          <h3>Надаємо послуги з виконання вузькоспрямованих та спеціалізованих видів робіт:</h3>
+          <div class="separator"></div>
+        </div>
 
           <ul class="list-counter circle">
             <li>Зусилля вигину 1600 тонн на довжину 6м.</li>
@@ -39,20 +47,42 @@
           </p>
          
 
-          <p>
-            Максимальні товщини згину та сталі:
-          </p>
+          <div class="title-left small">
+            <h3>Максимальні товщини згину та сталі:</h3>
+            <div class="separator"></div>
+          </div>
 
           <ul class="list-counter circle">
             <li>20 мм на 6 метрах Hardox 450</li>
             <li>25 мм на 6 метрах Strenx 700MC</li>
             <li>30 мм на 6 метрах S355</li>
           </ul>
-        </div>
+
       </section>
+    
     </main>
 
     <footer></footer>
-    <script src="/script/script.js"></script>
   </body>
+
+  <script src="/script/wow.min.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass: "wow", // default
+      animateClass: "animated", // default
+      offset: 250, // default
+      mobile: true, // default
+      live: true, // default
+    });
+    wow.init();
+  </script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"
+  ></script>
+  <script src="/script/script.js"></script>
+  <script src="/script/component.js"></script>
 </html>
+

@@ -7,6 +7,11 @@ const production = base + "Production/Production.html";
 
 
 
+
+const instagram =''
+const facebook =''
+
+
 // Відновлення
 const repairing = "restoration-of-special-equipment/";
 
@@ -25,16 +30,16 @@ const Agriculture = base + repairing + "Agriculture.html";
 
 
 // РОЗРОБКА ТА ВИГОТОВЛЕННЯ
-const development = "development-and-preparation/"
+const development =base + "development-and-preparation/"
 
-// Навісне обладнання
-const AttachmentsForSpecialEquipment = base + development + "Attachments-for-special-equipment.html"
-// Технологічне обладнання
-const EquipmentForAgriculturalMachinery = base + development + "Equipment-for-agricultural-machinery.html"
+// Виготовлення навісного обладнання
+const AttachmentsForSpecialEquipment =  development + "Attachments-for-special-equipment.html"
+// Обладнання сільського господарства
+const EquipmentForAgriculturalMachinery = development + "Equipment-for-agricultural-machinery.html"
+// Виготовлення технологічног обладнання
+const ManufacturingOfTechnologicalEquipment =  development + "Manufacturing-of-technological-equipment.html"
 // Виготовлення конструкцій з металу за кресленнями
-const ManufacturingOfTechnologicalEquipment = base + development + "Manufacturing-of-technological-equipment.html"
-// Сільське господарство
-const ProductionOfMetalStructuresAccordingToCustomersDrawings = base + development + "Production-of-metal-structures-according-to-customers-drawings.html"
+const ProductionOfMetalStructuresAccordingToCustomersDrawings =  development + "Production-of-metal-structures-according-to-customers-drawings.html"
 
 
 
@@ -42,13 +47,16 @@ const ProductionOfMetalStructuresAccordingToCustomersDrawings = base + developme
 
 
 // ПОСЛУГИ
+const other=base +"other/"
 
 // Наплавочно-розточувальні роботи
+const SurfacingAndBoringOperations=other+'Surfacing-and-boring-operations.html'
 // Розробка деталей машин
+const DevelopmentOfMachineParts=other+'Development-of-machine-parts.html'
 // Футерування
+const Lining=other+'Lining.html'
 // Послуга гнуття листового металу
-
-
+const SheetMetalBending=other+'Sheet-metal-bending.html'
 
 
 
@@ -61,8 +69,8 @@ function header() {
     <a href="/"><img src="./src/img/logo_technocentr.svg" class="logo" alt="" /></a>
     <div class="link-list">
       <ul class="fast-contact">
-        <li><span>+38 067 733 91 95</span></li>
-        <li><span>cfifredko@gmail.com</span></li>
+        <li><span>067 555-49-00</span></li>
+        <li><span>1tehnocentr@gmail.com</span></li>
       </ul>
 
       <div>
@@ -95,20 +103,20 @@ function header() {
       <li class="sec-item">
         <span>РОЗРОБКА ТА ВИГОТОВЛЕННЯ</span>
         <ul class="thrd-list">
-          <li class="item"><a href=${AboutUs}>Навісне обладнання</a></li>
-          <li class="item"><a href=${AboutUs}>Технологічне обладнання</a></li>
-          <li class="item"><a href=${AboutUs}>Виготовлення конструкцій з металу за кресленнями</a></li>
-          <li class="item"><a href=${AboutUs}>Сільське господарство</a></li>
+          <li class="item"><a href=${AttachmentsForSpecialEquipment}>Виготовлення навісного обладнання</a></li>
+          <li class="item"><a href=${ManufacturingOfTechnologicalEquipment}>Виготовлення технологічног обладнання</a></li>
+          <li class="item"><a href=${ProductionOfMetalStructuresAccordingToCustomersDrawings}>Виготовлення конструкцій з металу за кресленнями</a></li>
+          <li class="item"><a href=${EquipmentForAgriculturalMachinery}>Обладнання сільського господарства</a></li>
         </ul>
       </li>
 
       <li class="sec-item">
         <span>ПОСЛУГИ</span>
         <ul class="thrd-list">
-          <li class="item"><a href=${AboutUs}>Наплавочно-розточувальні роботи</a></li>
-          <li class="item"><a href=${AboutUs}>Розробка деталей машин</a></li>
-          <li class="item"><a href=${AboutUs}>Футерування</a></li>
-          <li class="item"><a href=${AboutUs}>Послуга гнуття листового металу</a></li>
+          <li class="item"><a href=${SurfacingAndBoringOperations}>Наплавочно-розточувальні роботи</a></li>
+          <li class="item"><a href=${DevelopmentOfMachineParts}>Розробка деталей машин</a></li>
+          <li class="item"><a href=${Lining}>Футерування</a></li>
+          <li class="item"><a href=${SheetMetalBending}>Послуга гнуття листового металу</a></li>
         </ul>
       </li>
       <li>
@@ -123,9 +131,9 @@ function header() {
         <ul class="pages">
           <li class="link"><a href="${AboutUs}">Про нас</a></li>
           <li class="expand-menu link"><span class="expand-btn" onclick="showTestHamburger()">Послуги</span></li>
-          <li class="link"><a href="">Наші роботи</a></li>          
+          <li class="link"><a href=${OurWorks}>Наші роботи</a></li>          
           <li class="link"><a href=${production}>Продукція</a></li>
-          <li class="btn-primary"><a href="">Контакти</a></li>
+          <li class="btn-primary"><a href=${contacts}>Контакти</a></li>
         </ul>
 
         <div class="bottom-links">
@@ -145,30 +153,30 @@ function header() {
         <li class="sec-item">
           <span>Відновлення</span>
           <ul class="thrd-list">
-            <li class="item"><a href=${AboutUs}>Ремонт великогабаритної спецтехніки</a></li>
-            <li class="item"><a href=${AboutUs}>Відновлення гідравлічних систем</a></li>
-            <li class="item"><a href=${AboutUs}>Технологічне обладнання</a></li>
-            <li class="item"><a href=${AboutUs}>Сільське господарство</a></li>
+            <li class="item"><a href=${RepairOfLargeSizedSpecialEquipment}>Ремонт великогабаритної спецтехніки</a></li>
+            <li class="item"><a href=${RestorationOfHydraulicSystems}>Відновлення гідравлічних систем</a></li>
+            <li class="item"><a href=${RestorationOfTechnologicalEquipment}>Технологічне обладнання</a></li>
+            <li class="item"><a href=${Agriculture}>Сільське господарство</a></li>
           </ul>
         </li>
 
         <li class="sec-item">
           <span>РОЗРОБКА ТА ВИГОТОВЛЕННЯ</span>
           <ul class="thrd-list">
-            <li class="item"><a href=${AboutUs}>Навісне обладнання</a></li>
-            <li class="item"><a href=${AboutUs}>Технологічне обладнання</a></li>
-            <li class="item"><a href=${AboutUs}>Виготовлення конструкцій з металу за кресленнями</a></li>
-            <li class="item"><a href=${AboutUs}>Сільське господарство</a></li>
+            <li class="item"><a href=${AttachmentsForSpecialEquipment}>Виготовлення навісного обладнання</a></li>
+            <li class="item"><a href=${ManufacturingOfTechnologicalEquipment}>Виготовлення технологічног обладнання</a></li>
+            <li class="item"><a href=${ProductionOfMetalStructuresAccordingToCustomersDrawings}>Виготовлення конструкцій з металу за кресленнями</a></li>
+            <li class="item"><a href=${EquipmentForAgriculturalMachinery}>Обладнання сільського господарства</a></li>
           </ul>
         </li>
 
         <li class="sec-item">
           <span>ПОСЛУГИ</span>
           <ul class="thrd-list">
-            <li class="item"><a href=${AboutUs}>Наплавочно-розточувальні роботи</a></li>
-            <li class="item"><a href=${AboutUs}>Розробка деталей машин</a></li>
-            <li class="item"><a href=${AboutUs}>Футерування</a></li>
-            <li class="item"><a href=${AboutUs}>Послуга гнуття листового металу</a></li>
+            <li class="item"><a href=${SurfacingAndBoringOperations}>Наплавочно-розточувальні роботи</a></li>
+            <li class="item"><a href=${DevelopmentOfMachineParts}>Розробка деталей машин</a></li>
+            <li class="item"><a href=${Lining}>Футерування</a></li>
+            <li class="item"><a href=${SheetMetalBending}>Послуга гнуття листового металу</a></li>
           </ul>
         </li>
         <li>
@@ -202,39 +210,39 @@ function footer() {
           <ul>
             <li class="link"><span>Головна</span></li>
             <li class="link"><a href=${AboutUs}>Про нас</a></li>
-            <li class="link"><a href=${AboutUs}>Наші роботи</a></li>            
+            <li class="link"><a href=${OurWorks}>Наші роботи</a></li>            
             <li class="link"><a href=${production}>Продукція</a></li>
-            <li class="link"><a href=${AboutUs}>Контакти</a></li>
+            <li class="link"><a href=${contacts}>Контакти</a></li>
           </ul>
         </li>
 
         <li>
           <ul>
             <li class="link"><span>Відновлення</span></li>
-            <li class="link"><a href=${AboutUs}>Ремонт великогабаритної спецтехніки</a></li>
-            <li class="link"><a href=${AboutUs}>Відновлення гідравлічних систем</a></li>
-            <li class="link"><a href=${AboutUs}>Технологічне обладнання</a></li>
-            <li class="link"><a href=${AboutUs}>Сільське господарство</a></li>
+            <li class="link"><a href=${RepairOfLargeSizedSpecialEquipment}>Ремонт великогабаритної спецтехніки</a></li>
+            <li class="link"><a href=${RestorationOfHydraulicSystems}>Відновлення гідравлічних систем</a></li>
+            <li class="link"><a href=${RestorationOfTechnologicalEquipment}>Технологічне обладнання</a></li>
+            <li class="link"><a href=${Agriculture}>Сільське господарство</a></li>
           </ul>
         </li>
 
         <li>
           <ul>
             <li class="link"><span>РОЗРОБКА ТА ВИГОТОВЛЕННЯ</span></li>
-            <li class="link"><a href=${AboutUs}>Навісне обладнання</a></li>
-            <li class="link"><a href=${AboutUs}>Технологічне обладнання</a></li>
-            <li class="link"><a href=${AboutUs}>Виготовлення конструкцій з металу за кресленнями</a></li>
-            <li class="link"><a href=${AboutUs}>Сільське господарство</a></li>
+            <li class="link"><a href=${AttachmentsForSpecialEquipment}>Виготовлення навісного обладнання</a></li>
+            <li class="link"><a href=${ManufacturingOfTechnologicalEquipment}>Виготовлення технологічног обладнання</a></li>
+            <li class="link"><a href=${ProductionOfMetalStructuresAccordingToCustomersDrawings}>Виготовлення конструкцій з металу за кресленнями</a></li>
+            <li class="link"><a href=${EquipmentForAgriculturalMachinery}>Обладнання сільського господарства</a></li>
           </ul>
         </li>
 
         <li>
           <ul>
             <li class="link"><span>ПОСЛУГИ</span></li>
-            <li class="link"><a href=${AboutUs}>Наплавочно-розточувальні роботи</a></li>
-            <li class="link"><a href=${AboutUs}>Розробка деталей машин</a></li>
-            <li class="link"><a href=${AboutUs}>Футерування</a></li>
-            <li class="link"><a href=${AboutUs}>Послуга гнуття листового металу</a></li>
+            <li class="link"><a href=${SurfacingAndBoringOperations}>Наплавочно-розточувальні роботи</a></li>
+            <li class="link"><a href=${DevelopmentOfMachineParts}>Розробка деталей машин</a></li>
+            <li class="link"><a href=${Lining}>Футерування</a></li>
+            <li class="link"><a href=${SheetMetalBending}>Послуга гнуття листового металу</a></li>
           </ul>
         </li>
 
@@ -244,8 +252,8 @@ function footer() {
             <ul class="social">
               <li class="link"><span>Слідкуйте за нами</span></li>
               <ul class="social-links">
-                <li class="link"><a href=${AboutUs}><i class="fa-brands fa-facebook"></i></a></li>
-                <li class="link"><a href=${AboutUs}><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="link"><a href=${facebook}><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="link"><a href=${instagram}><i class="fa-brands fa-instagram"></i></a></li>
               </ul>
             </ul>
           </li>
